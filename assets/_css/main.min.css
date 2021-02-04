@@ -1,0 +1,1772 @@
+                                               body {
+                                               font-family: 'Open Sans', sans-serif;
+                                               font-size: 14px;
+                                               line-height: 24px;
+                                               color: #666;
+                                               background-color: #fff
+                                           }
+                                           
+                                           h1,
+                                           h2,
+                                           h3,
+                                           h4,
+                                           h5,
+                                           h6 {
+                                               color: #333
+                                           }
+                                           
+                                           h2 {
+                                               font-size: 30px;
+                                               margin-bottom: 20px
+                                           }
+                                           
+                                           h3 {
+                                               font-size: 18px
+                                           }
+                                           
+                                           .parallax {
+                                               background-size: cover;
+                                               background-repeat: no-repeat;
+                                               background-position: center;
+                                               background-attachment: fixed
+                                           }
+                                           
+                                           .parallax,
+                                           .parallax h1,
+                                           .parallax h2,
+                                           .parallax h3,
+                                           .parallax h4,
+                                           .parallax h5,
+                                           .parallax h6 {
+                                               color: #fff
+                                           }
+                                           
+                                           .parallax input[type="text"],
+                                           .parallax input[type="text"]:hover,
+                                           .parallax input[type="email"],
+                                           .parallax input[type="email"]:hover,
+                                           .parallax input[type="url"],
+                                           .parallax input[type="url"]:hover,
+                                           .parallax input[type="password"],
+                                           .parallax input[type="password"]:hover,
+                                           .parallax textarea,
+                                           .parallax textarea:hover {
+                                               font-weight: 300;
+                                               color: #fff
+                                           }
+                                           
+                                           .btn {
+                                               border: 0;
+                                               border-radius: 0
+                                           }
+                                           
+                                           .btn.btn-primary:hover {
+                                               background-color: #017fb5
+                                           }
+                                           
+                                           .navbar-nav li a:hover,
+                                           .navbar-nav li a:focus {
+                                               outline: none;
+                                               outline-offset: 0;
+                                               text-decoration: none;
+                                               background: transparent
+                                           }
+                                           
+                                           a {
+                                               text-decoration: none;
+                                               -webkit-transition: 300ms;
+                                               -moz-transition: 300ms;
+                                               -o-transition: 300ms;
+                                               transition: 300ms
+                                           }
+                                           
+                                           a:focus,
+                                           a:hover {
+                                               text-decoration: none;
+                                               outline: none
+                                           }
+                                           
+                                           section {
+                                               padding: 80px 0
+                                           }
+                                           
+                                           .heading {
+                                               padding-bottom: 40px
+                                           }
+                                           
+                                           .preloader {
+                                               position: fixed;
+                                               top: 0;
+                                               left: 0;
+                                               right: 0;
+                                               bottom: 0;
+                                               z-index: 999999;
+                                               background: #fff
+                                           }
+                                           
+                                           .preloader>i {
+                                               position: absolute;
+                                               font-size: 36px;
+                                               line-height: 36px;
+                                               top: 50%;
+                                               left: 50%;
+                                               height: 36px;
+                                               width: 36px;
+                                               margin-top: -15px;
+                                               margin-left: -15px;
+                                               display: inline-block
+                                           }
+                                           
+                                           #home-slider {
+                                               overflow: hidden;
+                                               position: relative
+                                           }
+                                           
+                                           #home-slider .caption {
+                                               position: absolute;
+                                               top: 50%;
+                                               margin-top: -104px;
+                                               left: 0;
+                                               right: 0;
+                                               text-align: center;
+                                               text-transform: uppercase;
+                                               z-index: 15;
+                                               font-size: 18px;
+                                               font-weight: 300;
+                                               color: #fff
+                                           }
+                                           
+                                           #home-slider .caption h1 {
+                                               color: #fff;
+                                               font-size: 60px;
+                                               font-weight: 700;
+                                               margin-bottom: 30px
+                                           }
+                                           
+                                           .caption .btn-start {
+                                               color: #fff;
+                                               font-size: 14px;
+                                               font-weight: 600;
+                                               padding: 14px 40px;
+                                               border: 1px solid #6e6d6c;
+                                               border-radius: 4px;
+                                               margin-top: 40px
+                                           }
+                                           
+                                           .caption .btn-start:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           .carousel-fade .carousel-inner .item {
+                                               opacity: 0;
+                                               -webkit-transition-property: opacity;
+                                               transition-property: opacity;
+                                               background-repeat: no-repeat;
+                                               background-size: cover
+                                           }
+                                           
+                                           .newsItemHeader {
+                                               text-align: center
+                                           }
+                                           
+                                           .newsSection {
+                                               background-image: url(img/news_and_events.jpg);
+                                               padding-top: 0;
+                                               padding-bottom: 20px
+                                           }
+                                           
+                                           #News .carousel-fade .carousel-inner .item:after {
+                                               content: " ";
+                                               position: absolute;
+                                               top: 0;
+                                               bottom: 0;
+                                               left: 0;
+                                               right: 0;
+                                               background: none
+                                           }
+                                           
+                                           .carousel-fade .carousel-inner .item:after {
+                                               content: " ";
+                                               position: absolute;
+                                               top: 0;
+                                               bottom: 0;
+                                               left: 0;
+                                               right: 0;
+                                               background: rgba(0, 0, 0, .7)
+                                           }
+                                           
+                                           .carousel-fade .carousel-inner .active {
+                                               opacity: 1
+                                           }
+                                           
+                                           .carousel-fade .carousel-inner .active.left,
+                                           .carousel-fade .carousel-inner .active.right {
+                                               left: 0;
+                                               opacity: 0;
+                                               z-index: 1
+                                           }
+                                           
+                                           .carousel-fade .carousel-inner .next.left,
+                                           .carousel-fade .carousel-inner .prev.right {
+                                               opacity: 1
+                                           }
+                                           
+                                           .carousel-fade .carousel-control {
+                                               z-index: 2
+                                           }
+                                           
+                                           .left-control,
+                                           .right-control {
+                                               position: absolute;
+                                               top: 50%;
+                                               height: 51px;
+                                               width: 51px;
+                                               line-height: 48px;
+                                               border-radius: 50%;
+                                               border: 1px solid #fff;
+                                               z-index: 20;
+                                               font-size: 24px;
+                                               color: #fff;
+                                               text-align: center;
+                                               -webkit-transition: all .5s ease;
+                                               -moz-transition: all .5s ease;
+                                               -ms-transition: all .5s ease;
+                                               -o-transition: all .5s ease;
+                                               transition: all .5s ease
+                                           }
+                                           
+                                           .left-control {
+                                               left: -51px
+                                           }
+                                           
+                                           .right-control {
+                                               right: -51px
+                                           }
+                                           
+                                           .left-control:hover,
+                                           .right-control:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           #home-slider:hover .left-control {
+                                               left: 30px
+                                           }
+                                           
+                                           #home-slider:hover .right-control {
+                                               right: 30px
+                                           }
+                                           
+                                           #home-slider .fa-angle-down {
+                                               position: absolute;
+                                               left: 50%;
+                                               bottom: 150px;
+                                               color: #fff;
+                                               display: inline-block;
+                                               width: 24px;
+                                               margin-left: -12px;
+                                               font-size: 24px;
+                                               line-height: 24px;
+                                               z-index: 999;
+                                               -webkit-animation: bounce 3000ms infinite;
+                                               animation: bounce 3000ms infinite
+                                           }
+                                           
+                                           .navbar-right li a {
+                                               color: #fff;
+                                               text-transform: uppercase;
+                                               font-size: 14px;
+                                               font-weight: 600;
+                                               padding-top: 30px;
+                                               padding-bottom: 30px
+                                           }
+                                           
+                                           .navbar-right li.active a {
+                                               background-color: rgba(0, 0, 0, .2)
+                                           }
+                                           
+                                           .navbar-brand h1 {
+                                               margin-top: 0;
+                                               padding: 0 15px
+                                           }
+                                           
+                                           .service-icon {
+                                               border-radius: 4px;
+                                               color: #fff;
+                                               display: inline-block;
+                                               font-size: 36px;
+                                               height: 200px;
+                                               line-height: 90px;
+                                               width: 300px;
+                                               -webkit-transition: background-color .2s ease;
+                                               transition: background-color .2s ease
+                                           }
+                                           
+                                           #services .col-sm-4:hover .service-icon {
+                                               background-color: #333
+                                           }
+                                           
+                                           #services .col-sm-4 {
+                                               border-right: 1px solid #f2f2f2;
+                                               border-bottom: 1px solid #f2f2f2;
+                                               padding-bottom: 50px
+                                           }
+                                           
+                                           #services .col-sm-4:nth-child(4),
+                                           #services .col-sm-4:nth-child(5),
+                                           #services .col-sm-4:nth-child(6) {
+                                               border-bottom: 0;
+                                               padding-top: 60px
+                                           }
+                                           
+                                           #services .col-sm-4:nth-child(3),
+                                           #services .col-sm-4:nth-child(6) {
+                                               border-right: 0
+                                           }
+                                           
+                                           #swservices .col-sm-4:hover .service-icon {
+                                               background-color: #333
+                                           }
+                                           
+                                           #swservices .col-sm-4 {
+                                               border-right: 1px solid #f2f2f2;
+                                               border-bottom: 1px solid #f2f2f2;
+                                               padding-bottom: 50px
+                                           }
+                                           
+                                           #swservices .col-sm-4:nth-child(4),
+                                           #swservices .col-sm-4:nth-child(5),
+                                           #swservices .col-sm-4:nth-child(6) {
+                                               border-bottom: 0;
+                                               padding-top: 60px
+                                           }
+                                           
+                                           #swservices .col-sm-4:nth-child(3),
+                                           #swservices .col-sm-4:nth-child(6) {
+                                               border-right: 0
+                                           }
+                                           
+                                           .service-info h3 {
+                                               margin-top: 35px
+                                           }
+                                           
+                                           .service-image {
+                                               display: block;
+                                               width: 100%;
+                                               height: 100%
+                                           }
+                                           
+                                           #aboutus {
+                                               background-image: url(../img/about-bg.jpg)
+                                           }
+                                           
+                                           #filters {
+                                               background-image: url(../img/searchfilter.png)
+                                           }
+                                           
+                                           .searchfilters {
+                                               padding: 10px 0
+                                           }
+                                           
+                                           #vision {
+                                               background-image: url(../img/vision-bg.jpg);
+                                               padding: 80px 0
+                                           }
+                                           
+                                           #account {
+                                               background-image: url(../img/account-bg.jpg);
+                                               padding: 100px 0
+                                           }
+                                           
+                                           #contact {
+                                               padding: 0;
+                                               padding-top: 80px 0
+                                           }
+                                           
+                                           #aboutus h2 {
+                                               margin-top: 0;
+                                               color: #fff
+                                           }
+                                           
+                                           #aboutus .lead {
+                                               font-size: 16px;
+                                               margin-bottom: 10px
+                                           }
+                                           
+                                           #aboutus h1 {
+                                               margin-bottom: 30px
+                                           }
+                                           
+                                           .progress {
+                                               height: 20px;
+                                               background-color: #fff;
+                                               border-radius: 0;
+                                               box-shadow: none;
+                                               -webkit-box-shadow: none;
+                                               margin-bottom: 25px
+                                           }
+                                           
+                                           .progress-bar {
+                                               box-shadow: none;
+                                               -webkit-box-shadow: none;
+                                               text-align: right;
+                                               padding-right: 12px;
+                                               font-size: 12px;
+                                               font-weight: 600
+                                           }
+                                           
+                                           .progress .progress-bar.six-sec-ease-in-out {
+                                               -webkit-transition: width 2s ease-in-out;
+                                               transition: width 2s ease-in-out
+                                           }
+                                           
+                                           #results .container-fluid,
+                                           #results .col-sm-3,
+                                           #portfolio .container-fluid,
+                                           #portfolio .col-sm-3 {
+                                               overflow: hidden;
+                                               padding: 0;
+                                               padding-top: 20px
+                                           }
+                                           
+                                           #results .folio-item,
+                                           #portfolio .folio-item {
+                                               position: relative
+                                           }
+                                           
+                                           #results .overlay,
+                                           #portfolio .overlay {
+                                               background-color: #000;
+                                               color: #fff;
+                                               left: 0;
+                                               right: 0;
+                                               bottom: -100%;
+                                               height: 0;
+                                               position: absolute;
+                                               text-align: center;
+                                               opacity: 0;
+                                               -webkit-transition: all .5s ease-in-out;
+                                               transition: all .5s ease-in-out
+                                           }
+                                           
+                                           .overlay .overlay-content {
+                                               display: table;
+                                               height: 100%;
+                                               width: 100%
+                                           }
+                                           
+                                           .overlay .overlay-text {
+                                               display: table-cell;
+                                               vertical-align: middle
+                                           }
+                                           
+                                           .overlay .folio-info {
+                                               opacity: 0;
+                                               margin-bottom: 75px;
+                                               margin-top: -75px;
+                                               -webkit-transition: all 1s ease-in-out;
+                                               transition: all 1s ease-in-out
+                                           }
+                                           
+                                           .overlay .folio-info h3 {
+                                               margin-top: 0;
+                                               color: #fff
+                                           }
+                                           
+                                           .folio-overview a {
+                                               font-size: 18px;
+                                               color: #333;
+                                               height: 50px;
+                                               width: 50px;
+                                               line-height: 50px;
+                                               border-radius: 50%;
+                                               background-color: #fff;
+                                               display: inline-block;
+                                               margin-top: 20px;
+                                               margin-right: 5px
+                                           }
+                                           
+                                           .folio-overview a:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           .folio-overview .folio-expand {
+                                               margin-top: -500px;
+                                               margin-left: -500px
+                                           }
+                                           
+                                           .folio-image,
+                                           .folio-overview .folio-expand {
+                                               -webkit-transition: all .8s ease-in-out;
+                                               transition: all .8s ease-in-out
+                                           }
+                                           
+                                           #portfolio .folio-item:hover .folio-image {
+                                               -webkit-transform: scale(1.5) rotate(-15deg);
+                                               transform: scale(1.5) rotate(-15deg)
+                                           }
+                                           
+                                           #results .folio-image img {
+                                               width: 100px
+                                           }
+                                           
+                                           .folio-image img {
+                                               width: 100%
+                                           }
+                                           
+                                           #results .folio-item:hover .overlay,
+                                           #portfolio .folio-item:hover .overlay {
+                                               opacity: .8;
+                                               bottom: 0;
+                                               height: 100%
+                                           }
+                                           
+                                           #results .folio-item:hover .folio-overview .folio-expand,
+                                           #portfolio .folio-item:hover .folio-overview .folio-expand {
+                                               margin-top: 0;
+                                               margin-left: 0
+                                           }
+                                           
+                                           #results .folio-item:hover .overlay .folio-info,
+                                           #portfolio .folio-item:hover .overlay .folio-info {
+                                               opacity: 1;
+                                               margin-bottom: 0;
+                                               margin-top: 0
+                                           }
+                                           
+                                           #single-portfolio {
+                                               padding: 90px 0;
+                                               background: #f5f5f5;
+                                               position: relative
+                                           }
+                                           
+                                           #single-portfolio img {
+                                               width: 100%;
+                                               margin-bottom: 10px
+                                           }
+                                           
+                                           #single-portfolio .close-folio-item {
+                                               position: absolute;
+                                               top: 30px;
+                                               font-size: 34px;
+                                               width: 34px;
+                                               height: 34px;
+                                               left: 50%;
+                                               color: #999;
+                                               margin-left: -17px
+                                           }
+                                           
+                                           @media(max-width:768px) {
+                                               .pull-right {
+                                                   float: none !important
+                                               }
+                                               .navbar-logo {
+                                                   height: 50px
+                                               }
+                                           }
+                                           
+                                           .navbar-logo {
+                                               height: 80px
+                                           }
+                                           
+                                           @media(min-width:768px) {
+                                               .portfolioimage {
+                                                   margin-left: 25%;
+                                                   margin-right: 20px
+                                               }
+                                           }
+                                           
+                                           #team {
+                                               padding-top: 0
+                                           }
+                                           
+                                           .team-members {
+                                               margin-bottom: 25px
+                                           }
+                                           
+                                           .social-icons {
+                                               margin-top: 30px;
+                                               text-align: center
+                                           }
+                                           
+                                           .social-icons ul {
+                                               list-style: none;
+                                               padding: 0;
+                                               margin: 0;
+                                               display: inline-block
+                                           }
+                                           
+                                           .social-icons ul li {
+                                               float: left;
+                                               margin-right: 8px
+                                           }
+                                           
+                                           .social-icons ul li:last-child {
+                                               margin-right: 0
+                                           }
+                                           
+                                           .social-icons ul li a {
+                                               color: #fff;
+                                               background-color: #d9d9d9;
+                                               height: 36px;
+                                               width: 36px;
+                                               line-height: 36px;
+                                               display: block;
+                                               font-size: 16px;
+                                               opacity: .8
+                                           }
+                                           
+                                           .social-icons ul li a:hover {
+                                               opacity: 1;
+                                               -webkit-transform: scale(1.2);
+                                               transform: scale(1.2)
+                                           }
+                                           
+                                           .team-member {
+                                               text-align: center;
+                                               color: #333;
+                                               font-size: 14px
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.envelope {
+                                               background-color: #cecb26
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.facebook {
+                                               background-color: #3b5999
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.twitter {
+                                               background-color: #2ac6f7
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.dribbble {
+                                               background-color: #ff5b92
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.linkedin {
+                                               background-color: #036dc0
+                                           }
+                                           
+                                           .team-member:hover .social-icons ul li a.rss {
+                                               background-color: #ff6b00
+                                           }
+                                           
+                                           #team .img-responsive {
+                                               width: 100%;
+                                               -webkit-border-radius: 100px;
+                                               -moz-border-radius: 100px;
+                                               border-radius: 600px;
+                                           }
+                                           
+                                           .member-info h3 {
+                                               margin-top: 35px
+                                           }
+                                           
+                                           .member-info h4 {
+                                               font-size: 14px;
+                                               margin-bottom: 15px;
+                                               color: #999
+                                           }
+                                           
+                                           #feature {
+                                               text-align: center;
+                                               background-image: url(img/features-bg.jpg)
+                                           }
+                                           
+                                           #feature i {
+                                               font-size: 48px
+                                           }
+                                           
+                                           #feature h3 {
+                                               margin-top: 15px;
+                                               font-size: 30px;
+                                               margin-bottom: 7px;
+                                               color: #fff
+                                           }
+                                           
+                                           #feature .slider-overlay {
+                                               opacity: .8
+                                           }
+                                           
+                                           #Results {
+                                               text-align: center;
+                                               background-image: url(img/Results-bg.jpg)
+                                           }
+                                           
+                                           #Results i {
+                                               font-size: 20px
+                                           }
+                                           
+                                           #Results h3 {
+                                               margin-top: 15px;
+                                               font-size: 20px;
+                                               margin-bottom: 7px;
+                                               color: #fff
+                                           }
+                                           
+                                           #Results .slider-overlay {
+                                               opacity: .8
+                                           }
+                                           
+                                           #Search {
+                                               text-align: center;
+                                               background-image: url(img/search-bg.jpg)
+                                           }
+                                           
+                                           #Search i {
+                                               font-size: 20px
+                                           }
+                                           
+                                           #Search h3 {
+                                               margin-top: 15px;
+                                               font-size: 20px;
+                                               margin-bottom: 7px;
+                                               color: #fff
+                                           }
+                                           
+                                           #Search .slider-overlay {
+                                               opacity: .8
+                                           }
+                                           
+                                           .pricing-table {
+                                               text-align: center
+                                           }
+                                           
+                                           .single-table {
+                                               padding: 30px 20px 20px;
+                                               border: 1px solid #f2f2f2
+                                           }
+                                           
+                                           .single-table h3 {
+                                               margin-top: 0;
+                                               padding: 0;
+                                               font-size: 18px;
+                                               text-transform: uppercase;
+                                               margin-bottom: 30px
+                                           }
+                                           
+                                           .price {
+                                               font-size: 36px;
+                                               line-height: 36px
+                                           }
+                                           
+                                           .price span {
+                                               font-size: 14px;
+                                               line-height: 14px
+                                           }
+                                           
+                                           .single-table ul {
+                                               list-style: none;
+                                               padding: 0;
+                                               margin: 30px 0
+                                           }
+                                           
+                                           .single-table ul li {
+                                               line-height: 30px
+                                           }
+                                           
+                                           .single-table.featured {
+                                               color: #fff
+                                           }
+                                           
+                                           .single-table.featured h3 {
+                                               color: #fff
+                                           }
+                                           
+                                           .single-table.featured .btn.btn-primary {
+                                               background-color: #fff
+                                           }
+                                           
+                                           #twitter {
+                                               background-image: url(../img/twitter-bg.jpg)
+                                           }
+                                           
+                                           #twitter>div {
+                                               text-align: center;
+                                               position: relative
+                                           }
+                                           
+                                           #twitter-carousel {
+                                               position: relative;
+                                               z-index: 15
+                                           }
+                                           
+                                           .twitter-icon {
+                                               position: relative;
+                                               z-index: 15;
+                                               color: #fff
+                                           }
+                                           
+                                           .twitter-icon .fa-twitter {
+                                               font-size: 24px;
+                                               height: 64px;
+                                               width: 64px;
+                                               line-height: 65px;
+                                               border-radius: 50%;
+                                               position: relative
+                                           }
+                                           
+                                           .twitter-icon .fa-twitter:after {
+                                               position: absolute;
+                                               content: "";
+                                               border-width: 8px;
+                                               border-style: solid;
+                                               left: 24px;
+                                               bottom: -14px
+                                           }
+                                           
+                                           #twitter-carousel .item {
+                                               padding: 0 55px
+                                           }
+                                           
+                                           #twitter-carousel .item a {
+                                               color: #fff
+                                           }
+                                           
+                                           .twitter-icon h4 {
+                                               text-transform: uppercase;
+                                               margin-top: 25px;
+                                               margin-bottom: 25px;
+                                               color: #fff
+                                           }
+                                           
+                                           .twitter-left-control,
+                                           .twitter-right-control {
+                                               position: absolute;
+                                               top: 50%;
+                                               color: #fff;
+                                               border: 1px solid #fafafa;
+                                               height: 34px;
+                                               width: 34px;
+                                               line-height: 31px;
+                                               margin-top: -17px;
+                                               font-size: 18px;
+                                               border-radius: 50%;
+                                               z-index: 15
+                                           }
+                                           
+                                           .twitter-left-control {
+                                               left: 80px
+                                           }
+                                           
+                                           .twitter-right-control {
+                                               right: 80px
+                                           }
+                                           
+                                           .twitter-left-control:hover,
+                                           .twitter-right-control:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           .post-thumb {
+                                               position: relative
+                                           }
+                                           
+                                           .post-icon {
+                                               position: absolute;
+                                               top: 10px;
+                                               right: 10px;
+                                               height: 30px;
+                                               width: 30px;
+                                               line-height: 30px;
+                                               border-radius: 4px;
+                                               text-align: center;
+                                               color: #fff;
+                                               font-size: 12px
+                                           }
+                                           
+                                           .post-meta {
+                                               position: absolute;
+                                               bottom: 15px;
+                                               left: 15px;
+                                               color: #fff;
+                                               font-size: 12px;
+                                               text-transform: uppercase;
+                                               font-weight: 600
+                                           }
+                                           
+                                           .post-meta span {
+                                               margin-right: 16px
+                                           }
+                                           
+                                           #post-carousel .carousel-indicators {
+                                               bottom: 3px;
+                                               left: 90%
+                                           }
+                                           
+                                           .blog-left-control,
+                                           .blog-right-control {
+                                               position: absolute;
+                                               top: 45%;
+                                               width: 30px;
+                                               text-align: center;
+                                               color: rgba(255, 255, 255, .7);
+                                               font-size: 36px
+                                           }
+                                           
+                                           .blog-left-control {
+                                               left: 0
+                                           }
+                                           
+                                           .blog-right-control {
+                                               right: 0
+                                           }
+                                           
+                                           .blog-left-control:hover,
+                                           .blog-right-control:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           .entry-header h3 a {
+                                               line-height: 30px
+                                           }
+                                           
+                                           .entry-header .date,
+                                           .entry-header .cetagory {
+                                               display: inline-block;
+                                               font-size: 11px;
+                                               font-weight: 600;
+                                               margin-bottom: 30px;
+                                               text-transform: uppercase;
+                                               position: relative
+                                           }
+                                           
+                                           .entry-header .date:after {
+                                               content: "";
+                                               position: absolute;
+                                               left: 0;
+                                               bottom: -22px;
+                                               width: 20px;
+                                               height: 3px
+                                           }
+                                           
+                                           .entry-content {
+                                               font-size: 14px
+                                           }
+                                           
+                                           .load-more {
+                                               display: block;
+                                               text-align: center;
+                                               margin-top: 70px
+                                           }
+                                           
+                                           .btn-loadmore {
+                                               border: 1px solid #f2f2f2;
+                                               color: #666;
+                                               font-size: 14px;
+                                               font-weight: 600;
+                                               padding: 15px 125px;
+                                               text-transform: uppercase
+                                           }
+                                           
+                                           .btn-loadmore:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           .customerlogo {
+                                               height: 150px;
+                                               padding-top: 5px
+                                           }
+                                           
+                                           #google-map {
+                                               height: 350px
+                                           }
+                                           
+                                           #contact {
+                                               padding-top: 0
+                                           }
+                                           
+                                           #contact-us {
+                                               background-image: url(../img/contact-bg.jpg);
+                                               padding-top: 80px
+                                           }
+                                           
+                                           .heading {
+                                               padding-top: 40px
+                                           }
+                                           
+                                           .form-control {
+                                               background-color: transparent;
+                                               border-color: rgba(255, 255, 255, .1);
+                                               height: 50px;
+                                               border-radius: 0;
+                                               box-shadow: none
+                                           }
+                                           
+                                           .form-control-blue {
+                                               background-color: #337ab7;
+                                               border-color: rgba(255, 255, 255, .1);
+                                               height: 50px;
+                                               border-radius: 0;
+                                               box-shadow: none;
+                                               margin-bottom: 5px
+                                           }
+                                           
+                                           .form-control-searchfilters {
+                                               border-color: rgba(255, 255, 255, 1);
+                                               height: auto;
+                                               margin: 5px 0
+                                           }
+                                           
+                                           select.form-control-searchfilters {
+                                               margin-bottom: 4px
+                                           }
+                                           
+                                           textarea.form-control {
+                                               min-height: 180px;
+                                               resize: none
+                                           }
+                                           
+                                           .form-group {
+                                               margin-bottom: 30px
+                                           }
+                                           
+                                           .contact-info {
+                                               padding-left: 70px;
+                                               font-weight: 300
+                                           }
+                                           
+                                           ul.address {
+                                               margin-top: 30px;
+                                               list-style: none;
+                                               padding: 0;
+                                               margin: 0
+                                           }
+                                           
+                                           .contact-info ul li {
+                                               margin-bottom: 8px
+                                           }
+                                           
+                                           .contact-info ul li a {
+                                               color: #fff
+                                           }
+                                           
+                                           .btn-submit {
+                                               display: block;
+                                               padding: 12px;
+                                               width: 100%;
+                                               color: #fff;
+                                               border: 0;
+                                               margin-top: 40px
+                                           }
+                                           
+                                           #footer {
+                                               color: #fff
+                                           }
+                                           
+                                           .footer-top {
+                                               position: relative;
+                                               padding: 30px 0
+                                           }
+                                           
+                                           #footer .footer-bottom {
+                                               background-color: #fff;
+                                               padding: 20px 0 10px
+                                           }
+                                           
+                                           #footer .footer-bottom a:hover {
+                                               text-decoration: underline
+                                           }
+                                           
+                                           .footer-logo {
+                                               display: inline-block;
+                                               margin-bottom: 5px
+                                           }
+                                           
+                                           #footer .social-icons {
+                                               margin-top: 15px
+                                           }
+                                           
+                                           #footer .social-icons ul {
+                                               list-style: none;
+                                               padding: 0;
+                                               margin: 0
+                                           }
+                                           
+                                           #footer .social-icons ul li a {
+                                               background-color: rgba(0, 0, 0, .2);
+                                               border-radius: 4px;
+                                               line-height: 33px
+                                           }
+                                           
+                                           #footer .social-icons ul li a:hover {
+                                               color: #fff
+                                           }
+                                           
+                                           #footer .social-icons ul li a.envelope:hover {
+                                               background-color: #cecb26
+                                           }
+                                           
+                                           #footer .social-icons ul li a.facebook:hover {
+                                               background-color: #3b5999
+                                           }
+                                           
+                                           #footer .social-icons ul li a.twitter:hover {
+                                               background-color: #2ac6f7
+                                           }
+                                           
+                                           #footer .social-icons ul li a.dribbble:hover {
+                                               background-color: #ff5b92
+                                           }
+                                           
+                                           #footer .social-icons ul li a.linkedin:hover {
+                                               background-color: #036dc0
+                                           }
+                                           
+                                           #footer .social-icons ul li a.tumblr:hover {
+                                               background-color: #ff6b00
+                                           }
+                                           
+                                           #footer .footer-links {
+                                               margin-top: 15px
+                                           }
+                                           
+                                           #footer .footer-links ul {
+                                               list-style: none;
+                                               padding: 0;
+                                               margin: 0;
+                                               text-align: center
+                                           }
+                                           
+                                           #footer .footer-links ul li {
+                                               display: inline-block
+                                           }
+                                           
+                                           #footer .footer-links ul li a {
+                                               display: block;
+                                               color: #fff;
+                                               text-align: center;
+                                               padding: 4px;
+                                               text-decoration: none
+                                           }
+                                           
+                                           #footer .footer-links ul li a:hover {
+                                               color: #fff;
+                                               text-decoration-line: underline
+                                           }
+                                           
+                                           .modal {
+                                               text-align: center;
+                                               padding: 0!important
+                                           }
+                                           
+                                           .modal:before {
+                                               content: '';
+                                               display: inline-block;
+                                               height: 100%;
+                                               vertical-align: middle;
+                                               margin-right: -4px
+                                           }
+                                           
+                                           .modal-dialog {
+                                               display: inline-block;
+                                               text-align: left;
+                                               vertical-align: middle
+                                           }
+                                           
+                                           .microsoftLogo {
+                                               display: inline-block;
+                                               margin: 0 auto;
+                                               max-height: 100px
+                                           }
+                                           
+                                           @media(max-width:768px) {
+                                               .microsoftLogo {
+                                                   display: inline-block;
+                                                   margin: 0;
+                                                   max-height: 60px
+                                               }
+                                           }
+                                           
+                                           @keyframes tawkMaxOpen {
+                                               0% {
+                                                   opacity: 0;
+                                                   transform: translate(0, 30px);
+                                               }
+                                               to {
+                                                   opacity: 1;
+                                                   transform: translate(0, 0px);
+                                               }
+                                           }
+                                           
+                                           @-moz-keyframes tawkMaxOpen {
+                                               0% {
+                                                   opacity: 0;
+                                                   transform: translate(0, 30px);
+                                               }
+                                               to {
+                                                   opacity: 1;
+                                                   transform: translate(0, 0px);
+                                               }
+                                           }
+                                           
+                                           @-webkit-keyframes tawkMaxOpen {
+                                               0% {
+                                                   opacity: 0;
+                                                   transform: translate(0, 30px);
+                                               }
+                                               to {
+                                                   opacity: 1;
+                                                   transform: translate(0, 0px);
+                                               }
+                                           }
+                                           
+                                           #OwONK0v-1600922950994 {
+                                               outline: none !important;
+                                               visibility: visible !important;
+                                               resize: none !important;
+                                               box-shadow: none !important;
+                                               overflow: visible !important;
+                                               background: none !important;
+                                               opacity: 1 !important;
+                                               filter: alpha(opacity=100) !important;
+                                               -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity1) !important;
+                                               -moz-opacity: 1 !important;
+                                               -khtml-opacity: 1 !important;
+                                               top: auto !important;
+                                               right: 10px !important;
+                                               bottom: 0px !important;
+                                               left: auto !important;
+                                               position: fixed !important;
+                                               border: 0 !important;
+                                               min-height: 0 !important;
+                                               min-width: 0 !important;
+                                               max-height: none !important;
+                                               max-width: none !important;
+                                               padding: 0 !important;
+                                               margin: 0 !important;
+                                               -moz-transition-property: none !important;
+                                               -webkit-transition-property: none !important;
+                                               -o-transition-property: none !important;
+                                               transition-property: none !important;
+                                               transform: none !important;
+                                               -webkit-transform: none !important;
+                                               -ms-transform: none !important;
+                                               width: auto !important;
+                                               height: auto !important;
+                                               display: none !important;
+                                               z-index: 2000000000 !important;
+                                               background-color: transparent !important;
+                                               cursor: auto !important;
+                                               float: none !important;
+                                               border-radius: unset !important;
+                                               pointer-events: auto !important;
+                                           }
+                                           
+                                           #nLIP4V3-1600922950995.open {
+                                               animation: tawkMaxOpen 0.25s ease !important;
+                                           }
+                                           
+                                           .dismissButton {
+                                               background-color: #fff;
+                                               border: 1px solid #dadce0;
+                                               color: #1a73e8;
+                                               border-radius: 4px;
+                                               font-family: Roboto, sans-serif;
+                                               font-size: 14px;
+                                               height: 36px;
+                                               cursor: pointer;
+                                               padding: 0 24px;
+                                           }
+                                           
+                                           .dismissButton:hover {
+                                               background-color: rgba(66, 133, 244, 0.04);
+                                               border: 1px solid #d2e3fc;
+                                           }
+                                           
+                                           .dismissButton:focus {
+                                               background-color: rgba(66, 133, 244, 0.12);
+                                               border: 1px solid #d2e3fc;
+                                               outline: 0;
+                                           }
+                                           
+                                           .dismissButton:hover:focus {
+                                               background-color: rgba(66, 133, 244, 0.16);
+                                               border: 1px solid #d2e2fd;
+                                           }
+                                           
+                                           .dismissButton:active {
+                                               background-color: rgba(66, 133, 244, 0.16);
+                                               border: 1px solid #d2e2fd;
+                                               box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+                                           }
+                                           
+                                           .dismissButton:disabled {
+                                               background-color: #fff;
+                                               border: 1px solid #f1f3f4;
+                                               color: #3c4043;
+                                           }
+                                           
+                                           .gm-style .gm-style-mtc label,
+                                           .gm-style .gm-style-mtc div {
+                                               font-weight: 400;
+                                           }
+                                           
+                                           .gm-control-active>img {
+                                               box-sizing: content-box;
+                                               display: none;
+                                               left: 50%;
+                                               pointer-events: none;
+                                               position: absolute;
+                                               top: 50%;
+                                               transform: translate(-50%, -50%);
+                                           }
+                                           
+                                           .gm-control-active>img:nth-child(1) {
+                                               display: block;
+                                           }
+                                           
+                                           .gm-control-active:hover>img:nth-child(1),
+                                           .gm-control-active:active>img:nth-child(1) {
+                                               display: none;
+                                           }
+                                           
+                                           .gm-control-active:hover>img:nth-child(2),
+                                           .gm-control-active:active>img:nth-child(3) {
+                                               display: block;
+                                           }
+                                           
+                                           .gm-ui-hover-effect {
+                                               opacity: 0.6;
+                                           }
+                                           
+                                           .gm-ui-hover-effect:hover {
+                                               opacity: 1;
+                                           }
+                                           
+                                           .gm-style .gm-style-cc span,
+                                           .gm-style .gm-style-cc a,
+                                           .gm-style .gm-style-mtc div {
+                                               font-size: 10px;
+                                               box-sizing: border-box;
+                                           }
+                                           
+                                           @media print {
+                                               .gm-style .gmnoprint,
+                                               .gmnoprint {
+                                                   display: none;
+                                               }
+                                           }
+                                           
+                                           @media screen {
+                                               .gm-style .gmnoscreen,
+                                               .gmnoscreen {
+                                                   display: none;
+                                               }
+                                           }
+                                           
+                                           .gm-style-pbc {
+                                               transition: opacity ease-in-out;
+                                               background-color: rgba(0, 0, 0, 0.45);
+                                               text-align: center;
+                                           }
+                                           
+                                           .gm-style-pbt {
+                                               font-size: 22px;
+                                               color: white;
+                                               font-family: Roboto, Arial, sans-serif;
+                                               position: relative;
+                                               margin: 0;
+                                               top: 50%;
+                                               -webkit-transform: translateY(-50%);
+                                               -ms-transform: translateY(-50%);
+                                               transform: translateY(-50%);
+                                           }
+                                           
+                                           .gm-style img {
+                                               max-width: none;
+                                           }
+                                           
+                                           .gm-style {
+                                               font: 400 11px Roboto, Arial, sans-serif;
+                                               text-decoration: none;
+                                           }
+                                           
+                                           .marqueeContainer {
+                                               padding: 3px;
+                                               border: 0px solid #e6e6e6;
+                                               overflow: hidden;
+                                           }
+                                           
+                                           .marquee {
+                                               display: block;
+                                               position: relative;
+                                               width: 2700px;
+                                               height: 200px;
+                                               animation: scroll 25s linear infinite;
+                                               padding: 15px;
+                                           }
+                                           
+                                           .marquee:hover {
+                                               animation-play-state: paused;
+                                           }
+                                           
+                                           .img1 {
+                                               margin: 15px;
+                                               width: 300px;
+                                               height: 200px;
+                                               background-color: #ffffff;
+                                               margin: 3px;
+                                               float: left;
+                                           }
+                                           /* Make it move */
+                                           
+                                           @keyframes scroll {
+                                               0% {
+                                                   left: 2600px;
+                                               }
+                                               100% {
+                                                   left: -2600px;
+                                               }
+                                           }
+                                           
+                                           body {
+                                               margin: 0;
+                                               padding: 0
+                                           }
+                                           
+                                           footer {
+                                               text-align: center;
+                                               background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBzdHJva2U9IiNGRkYiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLW9wYWNpdHk9Ii4xIj48cGF0aCBkPSJNNzcuMjYyIDMzLjk2NWw0My40NjMgMjUuMDkzaDBhNy4yIDcuMiAwIDAgMSAzLjYgNi4yMzV2NTAuMTg2aDBhNy4yIDcuMiAwIDAgMS0zLjYgNi4yMzZsLTQzLjQ2MyAyNS4wOTNoMGE3LjIgNy4yIDAgMCAxLTcuMiAwTDI2LjYgMTIxLjcxNWgwYTcuMiA3LjIgMCAwIDEtMy42LTYuMjM2VjY1LjI5M2gwYTcuMiA3LjIgMCAwIDEgMy42LTYuMjM1bDQzLjQ2Mi0yNS4wOTNoMGE3LjIgNy4yIDAgMCAxIDcuMiAwaDB6bTQuMjkgMTEuOTE5aDBhNS43NiA1Ljc2IDAgMCAwLTUuNzI5LS42MDJoMGwtMzYuODYgMTYuNDExYTUuNzYgNS43NiAwIDAgMC0zLjM4NiA0LjY2bC00LjIxOCA0MC4xMjhhNS43NiA1Ljc2IDAgMCAwIDIuMzQzIDUuMjYybDMyLjY0MyAyMy43MTdhNS43NiA1Ljc2IDAgMCAwIDUuNzI4LjYwMmgwbDM2Ljg2MS0xNi40MTJhNS43NiA1Ljc2IDAgMCAwIDMuMzg2LTQuNjZoMGw0LjIxNy00MC4xMjdhNS43NiA1Ljc2IDAgMCAwLTIuMzQzLTUuMjYyTDgxLjU1MSA0NS44ODR6TTI4OC45MTYgMjExLjA1M2w0OS42OTggNi45ODRoMGE3LjIgNy4yIDAgMCAxIDUuNjc0IDQuNDMzbDE4LjggNDYuNTMyaDBhNy4yIDcuMiAwIDAgMS0xLjAwMiA3LjEzbC0zMC44OTggMzkuNTQ3YTcuMiA3LjIgMCAwIDEtNi42NzYgMi42OTdsLTQ5LjY5Ny02Ljk4NWgwYTcuMiA3LjIgMCAwIDEtNS42NzQtNC40MzJsLTE4LjgtNDYuNTMyaDBhNy4yIDcuMiAwIDAgMSAxLjAwMi03LjEzbDMwLjg5OC0zOS41NDdoMGE3LjIgNy4yIDAgMCAxIDYuNjc1LTIuNjk3aDB6bTM0LjQzNiAxNS44NWgwYTUuMTg0IDUuMTg0IDAgMCAwLTQuOTAyLTEuNjg4aDBsLTM1Ljg0MyA2Ljk2N2E1LjE4NCA1LjE4NCAwIDAgMC0zLjkxMiAzLjRoMGwtMTEuODg4IDM0LjUyNmE1LjE4NCA1LjE4NCAwIDAgMCAuOTkgNS4wODhoMGwyMy45NTUgMjcuNTU4YTUuMTg0IDUuMTg0IDAgMCAwIDQuOTAxIDEuNjg4aDBsMzUuODQzLTYuOTY4YTUuMTg0IDUuMTg0IDAgMCAwIDMuOTEzLTMuNGwxMS44ODgtMzQuNTI1YTUuMTg0IDUuMTg0IDAgMCAwLS45OS01LjA5aDBsLTIzLjk1NS0yNy41NTd6TTIyNS44MTggMjYuNDVsMTYuNDQ4IDExLjk1aDBhMi44OCAyLjg4IDAgMCAxIDEuMTcyIDIuNjMybC0yLjEyNSAyMC4yMmgwYTIuODggMi44OCAwIDAgMS0xLjY5MyAyLjMzbC0xOC41NzQgOC4yNjloMGEyLjg4IDIuODggMCAwIDEtMi44NjQtLjMwMUwyMDEuNzM0IDU5LjZoMGEyLjg4IDIuODggMCAwIDEtMS4xNzItMi42MzJsMi4xMjUtMjAuMjJoMGEyLjg4IDIuODggMCAwIDEgMS42OTMtMi4zM2wxOC41NzQtOC4yNjloMGEyLjg4IDIuODggMCAwIDEgMi44NjQuMzAxek01MS44MTggMzM1LjQ1bDE2LjQ0OCAxMS45NWgwYTIuODggMi44OCAwIDAgMSAxLjE3MiAyLjYzMmwtMi4xMjUgMjAuMjJoMGEyLjg4IDIuODggMCAwIDEtMS42OTMgMi4zM2wtMTguNTc0IDguMjY5aDBhMi44OCAyLjg4IDAgMCAxLTIuODY0LS4zMDFMMjcuNzM0IDM2OC42aDBhMi44OCAyLjg4IDAgMCAxLTEuMTcyLTIuNjMybDIuMTI1LTIwLjIyaDBhMi44OCAyLjg4IDAgMCAxIDEuNjkzLTIuMzNsMTguNTc0LTguMjY5aDBhMi44OCAyLjg4IDAgMCAxIDIuODY0LjMwMXoiLz48cGF0aCBkPSJNNTAuNjMgMzQxLjUwOWw4LjcxIDguNDFoMGMuNDQzLjQzLjYyNSAxLjA2My40NzUgMS42NjJsLTIuOTI5IDExLjc0OGgwYTEuNzI4IDEuNzI4IDAgMCAxLTEuMiAxLjI0M2wtMTEuNjM5IDMuMzM3aDBjLS41OTMuMTctMS4yMzIuMDExLTEuNjc3LS40MThsLTguNzEtOC40MWgwYTEuNzI4IDEuNzI4IDAgMCAxLS40NzUtMS42NjJsMi45MjktMTEuNzQ4aDBhMS43MjggMS43MjggMCAwIDEgMS4yLTEuMjQzbDExLjYzOS0zLjMzN2gwYTEuNzI4IDEuNzI4IDAgMCAxIDEuNjc3LjQxOHpNMzQ4LjkwOSAxMTYuNzI1bDguMjI0IDUuOTc1aDBjLjQxNi4zMDMuNjQuODA0LjU4NiAxLjMxNmwtMS4wNjMgMTAuMTFoMGExLjQ0IDEuNDQgMCAwIDEtLjg0NiAxLjE2NWwtOS4yODcgNC4xMzRoMGExLjQ0IDEuNDQgMCAwIDEtMS40MzItLjE1bC04LjIyNC01Ljk3NWgwYTEuNDQgMS40NCAwIDAgMS0uNTg2LTEuMzE2bDEuMDYzLTEwLjExaDBhMS40NCAxLjQ0IDAgMCAxIC44NDYtMS4xNjVsOS4yODctNC4xMzRoMGExLjQ0IDEuNDQgMCAwIDEgMS40MzIuMTV6TTM3OC45MDkgMjYuNzI1bDguMjI0IDUuOTc1aDBjLjQxNi4zMDMuNjQuODA0LjU4NiAxLjMxNmwtMS4wNjMgMTAuMTFoMGExLjQ0IDEuNDQgMCAwIDEtLjg0NiAxLjE2NWwtOS4yODcgNC4xMzRoMGExLjQ0IDEuNDQgMCAwIDEtMS40MzItLjE1bC04LjIyNC01Ljk3NWgwYTEuNDQgMS40NCAwIDAgMS0uNTg2LTEuMzE2bDEuMDYzLTEwLjExaDBhMS40NCAxLjQ0IDAgMCAxIC44NDYtMS4xNjVsOS4yODctNC4xMzRoMGExLjQ0IDEuNDQgMCAwIDEgMS40MzIuMTV6TTMyNi42NDUgMjQuNzU1bDMuMTggMjAuMDhoMGEyLjg4IDIuODggMCAwIDEtMS4wMzIgMi42OWwtMTUuOCAxMi43OTRoMGEyLjg4IDIuODggMCAwIDEtMi44NDUuNDVsLTE4Ljk4LTcuMjg1aDBhMi44OCAyLjg4IDAgMCAxLTEuODEzLTIuMjM5bC0zLjE4LTIwLjA4aDBhMi44OCAyLjg4IDAgMCAxIDEuMDMyLTIuNjlsMTUuOC0xMi43OTRoMGEyLjg4IDIuODggMCAwIDEgMi44NDUtLjQ1bDE4Ljk4IDcuMjg1aDBhMi44OCAyLjg4IDAgMCAxIDEuODEzIDIuMjM5ek0yNzIuNTgxIDExMC4zOGw4LjI3IDE4LjU3NGgwYTIuODggMi44OCAwIDAgMS0uMzAxIDIuODY0bC0xMS45NSAxNi40NDhoMGEyLjg4IDIuODggMCAwIDEtMi42MzIgMS4xNzJsLTIwLjIyLTIuMTI1aDBhMi44OCAyLjg4IDAgMCAxLTIuMzMtMS42OTNsLTguMjY5LTE4LjU3NGgwYTIuODggMi44OCAwIDAgMSAuMzAxLTIuODY0bDExLjk1LTE2LjQ0OGgwYTIuODggMi44OCAwIDAgMSAyLjYzMi0xLjE3MmwyMC4yMiAyLjEyNWgwYTIuODggMi44OCAwIDAgMSAyLjMzIDEuNjkzeiIvPjxwYXRoIGQ9Ik0yNzUuMTY1IDEwNy4xNWwxMC4wMiAyMi41MDhoMGEzLjQ4NSAzLjQ4NSAwIDAgMS0uMzYzIDMuNDY2bC0xNC40ODIgMTkuOTMyaDBhMy40ODUgMy40ODUgMCAwIDEtMy4xODMgMS40MTdsLTI0LjUwMy0yLjU3NWgwYTMuNDg1IDMuNDg1IDAgMCAxLTIuODE5LTIuMDQ5bC0xMC4wMi0yMi41MDdoMGEzLjQ4NSAzLjQ4NSAwIDAgMSAuMzYzLTMuNDY2bDE0LjQ4Mi0xOS45MzJoMGEzLjQ4NSAzLjQ4NSAwIDAgMSAzLjE4My0xLjQxN2wyNC41MDMgMi41NzVoMGEzLjQ4NSAzLjQ4NSAwIDAgMSAyLjgxOSAyLjA0OXoiLz48cGF0aCBkPSJNMjgwLjk5MSAxMDEuMjFsMTMuMDQ2IDI5LjNoMGE0LjUzIDQuNTMgMCAwIDEtLjQ3NCA0LjUwNWwtMTguODUyIDI1Ljk0OWgwYTQuNTMgNC41MyAwIDAgMS00LjEzOSAxLjg0MmwtMzEuODk4LTMuMzUyaDBhNC41MyA0LjUzIDAgMCAxLTMuNjY1LTIuNjYzbC0xMy4wNDYtMjkuMzAxaDBhNC41MyA0LjUzIDAgMCAxIC40NzQtNC41MDVsMTguODUyLTI1Ljk0OWgwYTQuNTMgNC41MyAwIDAgMSA0LjEzOS0xLjg0MmwzMS44OTggMy4zNTJoMGE0LjUzIDQuNTMgMCAwIDEgMy42NjUgMi42NjN6TTE3OS45NSAxNTguMDlsNDMuMDk1IDY4Ljk2N2gwYTExLjUyIDExLjUyIDAgMCAxIC40MDIgMTEuNTEzbC0zOC4xOCA3MS44MDZoMGExMS41MiAxMS41MiAwIDAgMS05Ljc3IDYuMTA0bC04MS4yNzUgMi44MzloMGExMS41MiAxMS41MiAwIDAgMS0xMC4xNzEtNS40MDlsLTQzLjA5Ni02OC45NjdoMGExMS41MiAxMS41MiAwIDAgMS0uNDAyLTExLjUxM2wzOC4xOC03MS44MDZoMGExMS41MiAxMS41MiAwIDAgMSA5Ljc3LTYuMTA0bDgxLjI3NS0yLjgzOWgwYTExLjUyIDExLjUyIDAgMCAxIDEwLjE3MSA1LjQwOXoiLz48L2c+PC9zdmc+), linear-gradient(170deg, #00407f, #000d19)
+                                           }
+                                           
+                                           .footer-distributed {
+                                               background-color: #292c2f;
+                                               box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
+                                               box-sizing: border-box;
+                                               width: 100%;
+                                               text-align: center;
+                                               font: bold 16px sans-serif;
+                                               padding: 40px 20px 20px
+                                           }
+                                           
+                                           .footer-distributed .footer-center,
+                                           .footer-distributed .footer-left,
+                                           .footer-distributed .footer-right {
+                                               display: inline-block;
+                                               vertical-align: top
+                                           }
+                                           
+                                           .footer-distributed .footer-left {
+                                               width: 30%
+                                           }
+                                           
+                                           .footer-distributed .footer-center {
+                                               text-align: left;
+                                               width: 35%
+                                           }
+                                           
+                                           .footer-distributed h3 {
+                                               color: #5383d3;
+                                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                               font-size: 36px;
+                                               cursor: pointer;
+                                               margin: 0
+                                           }
+                                           
+                                           .footer-distributed h3 span {
+                                               color: #fff
+                                           }
+                                           
+                                           .footer-distributed .footer-links {
+                                               color: #fff;
+                                               margin: 20px 0 12px;
+                                               padding: 0
+                                           }
+                                           
+                                           .footer-distributed .footer-links a {
+                                               display: inline-block;
+                                               line-height: 1.8;
+                                               text-decoration: none;
+                                               color: inherit
+                                           }
+                                           
+                                           .footer-distributed .footer-company-name {
+                                               color: #8f9296;
+                                               font-size: 14px;
+                                               font-weight: 400;
+                                               margin: 0
+                                           }
+                                           
+                                           .footer-distributed .footer-center i {
+                                               background-color: #33383b;
+                                               color: #fff;
+                                               font-size: 25px;
+                                               width: 38px;
+                                               height: 38px;
+                                               border-radius: 50%;
+                                               text-align: center;
+                                               line-height: 42px;
+                                               margin: 10px 15px;
+                                               vertical-align: middle
+                                           }
+                                           
+                                           .footer-distributed .footer-center i.fa-envelope {
+                                               font-size: 17px;
+                                               line-height: 38px
+                                           }
+                                           
+                                           .footer-distributed .footer-center p {
+                                               display: inline-block;
+                                               color: #fff;
+                                               vertical-align: middle;
+                                               margin: 0
+                                           }
+                                           
+                                           .footer-distributed .footer-center p span {
+                                               display: block;
+                                               font-weight: 400;
+                                               font-size: 14px;
+                                               line-height: 2
+                                           }
+                                           
+                                           .footer-distributed .footer-center p a {
+                                               color: #5383d3;
+                                               text-decoration: none
+                                           }
+                                           
+                                           .footer-distributed .footer-right {
+                                               width: 20%
+                                           }
+                                           
+                                           .footer-distributed .footer-company-about {
+                                               line-height: 20px;
+                                               color: #92999f;
+                                               font-size: 13px;
+                                               font-weight: 400;
+                                               margin: 0
+                                           }
+                                           
+                                           .footer-distributed .footer-company-about span {
+                                               display: block;
+                                               color: #fff;
+                                               font-size: 14px;
+                                               font-weight: 700;
+                                               margin-bottom: 20px
+                                           }
+                                           
+                                           .footer-distributed .footer-icons {
+                                               margin-top: 25px
+                                           }
+                                           
+                                           .footer-distributed .footer-icons a {
+                                               display: inline-block;
+                                               width: 35px;
+                                               height: 35px;
+                                               cursor: pointer;
+                                               background-color: #33383b;
+                                               border-radius: 2px;
+                                               font-size: 20px;
+                                               color: #fff;
+                                               text-align: center;
+                                               line-height: 35px;
+                                               margin-right: 3px;
+                                               margin-bottom: 5px
+                                           }
+                                           
+                                           @media (max-width:880px) {
+                                               .footer-distributed {
+                                                   font: bold 14px sans-serif
+                                               }
+                                               .footer-distributed .footer-center,
+                                               .footer-distributed .footer-left,
+                                               .footer-distributed .footer-right {
+                                                   display: block;
+                                                   width: 100%;
+                                                   margin-bottom: 40px;
+                                                   text-align: center
+                                               }
+                                               .footer-distributed .footer-center i {
+                                                   margin-left: 0
+                                               }
+                                               .main {
+                                                   line-height: normal;
+                                                   font-size: auto
+                                               }
+                                               html {
+                                                   scroll-behavior: smooth;
+                                               }
+                                               .gotopbtn {
+                                                   position: fixed;
+                                                   width: 50px;
+                                                   height: 50px;
+                                                   background-image: linear-gradient(to top left, #0084e7, #00407f);
+                                                   bottom: 16px;
+                                                   right: 50px;
+                                                   border-radius: 8px;
+                                                   margin-left: 50px;
+                                                   margin-right: 50px;
+                                                   z-index: 99;
+                                                   text-decoration: none;
+                                                   text-align: center;
+                                                   line-height: 50px;
+                                                   color: white;
+                                                   font-size: 22px;
+                                                   cursor: pointer;
+                                               }
+                                           }
+                                           
+                                           html {
+                                               scroll-behavior: smooth;
+                                               color: white;
+                                           }
+                                           
+                                           .gotopbtn {
+                                               position: fixed;
+                                               width: 50px;
+                                               height: 50px;
+                                               background-image: linear-gradient(to top left, #0084e7, #00407f);
+                                               bottom: 16px;
+                                               right: 50px;
+                                               border-radius: 8px;
+                                               margin-left: 50px;
+                                               margin-right: 50px;
+                                               z-index: 99;
+                                               text-decoration: none;
+                                               text-align: center;
+                                               line-height: 50px;
+                                               color: white;
+                                               font-size: 22px;
+                                               cursor: pointer;
+                                           }
+                                           
+                                           @media only screen and (max-width: 992px) {
+                                               .contact-us-button {
+                                                   width: 100px;
+                                                   height: 1.625rem;
+                                                   line-height: 1.625;
+                                                   position: absolute;
+                                                   right: 20px;
+                                                   min-width: 100px;
+                                                   float: none;
+                                                   top: -moz-calc(100% - 2px);
+                                                   top: -webkit-calc(100% - 2px);
+                                                   top: -o-calc(100% - 2px);
+                                                   top: calc(100% - 2px);
+                                               }
+                                           }
+                                           
+                                           .contact-us-button {
+                                               position: relative;
+                                               opacity: 0.95;
+                                               background-color: #fff;
+                                               border: solid 1px #e5e5e5;
+                                               color: #474747;
+                                               display: block;
+                                               border-top-left-radius: 0;
+                                               border-top-right-radius: 0;
+                                               transition: 0s;
+                                               height: 2.25rem;
+                                               line-height: 2.25;
+                                               min-width: 142px;
+                                               float: right;
+                                               top: -2px;
+                                           }
+                                           
+                                           .button {
+                                               height: 2.5rem;
+                                               margin: auto;
+                                               background-color: #1f92f6;
+                                               color: #fff;
+                                               vertical-align: middle;
+                                               text-align: center;
+                                               line-height: 2.5rem;
+                                               border-radius: 5px;
+                                               display: inline-block;
+                                               padding: 0 1rem;
+                                               box-sizing: border-box;
+                                               cursor: pointer;
+                                               transition: .2s ease-out;
+                                               border: 0;
+                                           }
+                                           
+                                           @media only screen and (max-width: 992px) {
+                                               .contact-us-button {
+                                                   width: 100px;
+                                                   height: 1.625rem;
+                                                   line-height: 1.625;
+                                                   position: absolute;
+                                                   right: 20px;
+                                                   min-width: 100px;
+                                                   float: none;
+                                                   top: -moz-calc(100% - 2px);
+                                                   top: -webkit-calc(100% - 2px);
+                                                   top: -o-calc(100% - 2px);
+                                                   top: calc(100% - 2px);
+                                               }
+                                               .contact-us-button {
+                                                   position: relative;
+                                                   opacity: 0.95;
+                                                   background-color: #fff;
+                                                   border: solid 1px #e5e5e5;
+                                                   color: #474747;
+                                                   display: block;
+                                                   border-top-left-radius: 0;
+                                                   border-top-right-radius: 0;
+                                                   transition: 0s;
+                                                   height: 2.25rem;
+                                                   line-height: 2.25;
+                                                   min-width: 142px;
+                                                   float: right;
+                                                   top: -2px;
+                                               }
+                                               .button {
+                                                   height: 2.5rem;
+                                                   margin: auto;
+                                                   background-color: #1f92f6;
+                                                   color: #fff;
+                                                   vertical-align: middle;
+                                                   text-align: center;
+                                                   line-height: 2.5rem;
+                                                   border-radius: 5px;
+                                                   display: inline-block;
+                                                   padding: 0 1rem;
+                                                   box-sizing: border-box;
+                                                   cursor: pointer;
+                                                   transition: .2s ease-out;
+                                                   border: 0;
+                                               }
+                                               .text-style-15 {
+                                                   font-size: 0.9375rem;
+                                                   font-weight: 600;
+                                                   line-height: 1;
+                                               }
+                                               a {
+                                                   color: #0e8ff9;
+                                                   text-decoration: none;
+                                                   outline: none;
+                                               }
+                                               user agent stylesheet a:-webkit-any-link {
+                                                   color: -webkit-link;
+                                                   cursor: pointer;
+                                                   text-decoration: underline;
+                                               }
+                                               .fonts-loaded body {
+                                                   font-family: 'LatoWeb', sans-serif !important;
+                                               }
+                                               body,
+                                               button {
+                                                   text-rendering: optimizeLegibility;
+                                                   -webkit-font-smoothing: antialiased;
+                                                   -moz-osx-font-smoothing: grayscale;
+                                               }
+                                               body {
+                                                   -webkit-user-drag: none;
+                                                   background-color: #fff;
+                                                   color: #474747;
+                                               }
+                                               body,
+                                               button {
+                                                   text-rendering: optimizeLegibility;
+                                                   -webkit-font-smoothing: antialiased;
+                                                   -moz-osx-font-smoothing: grayscale;
+                                               }
+                                               @media only screen and (min-width: 0) html {
+                                                   font-size: 14px;
+                                               }
+                                               html {
+                                                   line-height: 1.5;
+                                                   font-style: normal;
+                                                   font-stretch: normal;
+                                                   font-weight: normal;
+                                               }

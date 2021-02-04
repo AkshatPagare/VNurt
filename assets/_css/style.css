@@ -1,0 +1,106 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+.h1 {
+    font-size: 38px;
+}
+
+h2,
+.h2 {
+    font-size: 32px;
+}
+
+h3,
+.h3 {
+    font-size: 26px;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+}
+
+h5,
+.h5 {
+    font-size: 16px;
+}
+
+h6,
+.h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h6.upper,
+.h6.upper {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.number-box {
+    margin: 25px auto;
+    max-width: 350px;
+}
+
+.number-box h2 {
+    font-size: 80px;
+    margin-top: 0;
+}
+
+.number-box h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.number-box h4:after {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background-color: #EF2D56;
+    display: block;
+    margin: 20px 0;
+}
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
+
+.section.dark {
+    background-color: #191b1d;
+    color: #fff;
+    border: 0;
+}
+
+::selection {
+    background-color: #191b1d;
+    color: #fff;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+user agent stylesheet ul {
+    list-style-type: disc;
+}
+
+.red {
+    color: #EF2D56 !important;
+}
+
+.red-dot:before {
+    content: ".";
+    color: #EF2D56;
+}

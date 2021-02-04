@@ -1,0 +1,3226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://www.vnurt.com/ -->
+<html lang="en" manifest="../VNurt.appcache">
+<!--<html lang="en">-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>VNurt - Enabling Collaboration</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="assets/default" charset="UTF-8" crossorigin="*"></script>
+    <script async="" src="assets/_js/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-119262976-1");
+    </script>
+    <link href="assets/_css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/_css/animate.min.css" rel="stylesheet" />
+    <link href="assets/_css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/_css/main.min.css" rel="stylesheet" />
+    <link id="css-preset" href="assets/_css/preset1.min.css" rel="stylesheet" />
+    <link href="assets/_css/responsive.min.css" rel="stylesheet" />
+    <link href="assets/_css/css(1)" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="https://www.vnurt.com/assets/img/favicon.ico" />
+    <link href="assets/_css/theme.css" rel="stylesheet" />
+    <link href="assets/_css/style.css" rel="stylesheet" />
+    <link href="assets/_css/bundle.css" rel="stylesheet" />
+
+    <script data-dapp-detection="">
+        (function() {
+            let alreadyInsertedMetaTag = false;
+
+            function __insertDappDetected() {
+                if (!alreadyInsertedMetaTag) {
+                    const meta = document.createElement("meta");
+                    meta.name = "dapp-detected";
+                    document.head.appendChild(meta);
+                    alreadyInsertedMetaTag = true;
+                }
+            }
+
+            if (window.hasOwnProperty("web3")) {
+                // Note a closure can't be used for this var because some sites like
+                // www.wnyc.org do a second script execution via eval for some reason.
+                window.__disableDappDetectionInsertion = true;
+                // Likely oldWeb3 is undefined and it has a property only because
+                // we defined it. Some sites like wnyc.org are evaling all scripts
+                // that exist again, so this is protection against multiple calls.
+                if (window.web3 === undefined) {
+                    return;
+                }
+                __insertDappDetected();
+            } else {
+                var oldWeb3 = window.web3;
+                Object.defineProperty(window, "web3", {
+                    configurable: true,
+                    set: function(val) {
+                        if (!window.__disableDappDetectionInsertion)
+                            __insertDappDetected();
+                        oldWeb3 = val;
+                    },
+                    get: function() {
+                        if (!window.__disableDappDetectionInsertion)
+                            __insertDappDetected();
+                        return oldWeb3;
+                    },
+                });
+            }
+        })();
+    </script>
+
+    <script type="text/javascript" charset="UTF-8" src="assets/_js/marker.js"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="assets/_js/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="assets/_js/controls.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="assets/_js/scrollr.min.js"></script>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body style="">
+    <div class="modal animated fadeIn" id="collegebrandingModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel">Career Guidance</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            At VNurt, we believe that students need high quality careers education, information, advice and guidance if they are to make sensible and informed decisions about their learning, training and career options.
+                            <br /><br /> To make students aware of the fact that jobs in a company are not the only thing which one can do after earning an educational degree. While in a particular branch of engineering, seek out what are the alternatives.
+                            <br /><br /> Provide insight to students about various possibilities that exist for making career choices. Inform them about the options that exist in single branch of specialization.
+                            <br /><br /> As needed we also involve professional career counsellors. The counsellors will have to have a deep knowledge of what options/possibilities/jobs/careers exist in Indian and foreign market.
+                            <br /><br /> To get the real benefits of this service in shaping up your career we encourage students to start using service in the early stages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="softwareservicesModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Software Development Services
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            VNurt provides software development services designed to help you grow your business and increase your ROI.
+                            <br /><br /> We offer services for:
+                        </p>
+                        <ul>
+                            <li>Custom Software Development</li>
+                            <li>Desktop Application Developmemt</li>
+                            <li>Web Application Development</li>
+                            <li>Mobile Application Development</li>
+                        </ul>
+                        <p></p>
+                        <p>
+                            There are many benefits of getting the software development services from VNurt, some are listed below:
+                        </p>
+                        <ul>
+                            <li>Customer satisfaction</li>
+                            <li>Reduced cost</li>
+                            <li>Value Delivery</li>
+                            <li>Custom Solutions</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="experttalksModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <!--<h4 class="modal-title" id="myModalLabel">
+        Expert Talks
+    </h4>-->
+                    <h3 class="modal-title" id="myModalLabel">Bootcamp 2.0</h3>
+                    <h6>CODE-COFFEE-REPEAT</h6>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            <b>Why Bootcamp:</b>
+                        </p>
+                        <ul>
+                            <li>
+                                Bootcamps are proven to boost your learning and application of ideas.
+                            </li>
+                            <li>
+                                Simulates real work company setup and focus on hands-on approach and assistance.
+                            </li>
+                            <li>
+                                Bootcamps are used by many organizations to quickly learn and scale skills.
+                            </li>
+                            <li>
+                                In Bootcamps we emphasize on problem solving and application instead of memorizing content.
+                            </li>
+                        </ul>
+                        <p></p>
+                        <p>
+                            <b>Benefits of VNurt's Bootcamp Program:</b>
+                        </p>
+                        <ul>
+                            <li>
+                                Engagement (not regular class) designed for wholistic experience on real in-house solutions of VNurt.
+                            </li>
+                            <li>
+                                <b>Tailored certificates</b> that highlight your individual skills and strengths upon completion.
+                            </li>
+                            <li>
+                                VNurt connects experts to students and academia and guides individuals to build career on their strengths.
+                            </li>
+                            <li>
+                                <b>Stipend for Performers</b> – Students who are ahead of the curve and contribute to solve problems in code consistently.
+                            </li>
+                            <li>
+                                <b>100% Job Oriented</b> – You are 70% more likely for hiring and 40% ahead average fresher post completing the path.
+                            </li>
+                            <li>
+                                <b>Real Projects</b> and <b>Real problem</b> use-cases assisted by <b>Real Professionals</b> (seek mentorships at the end of course).
+                            </li>
+                            <li>
+                                <b>Full-Stack Development</b> using angular, node, android, AI, IoT, C#/Java and many streams. We help you prepare for placement after Bootcamp in VNurt’s network.
+                            </li>
+                            <li>
+                                VNurt works with startups in and outside INDIA hence we expose engineers to real problems.
+                            </li>
+                        </ul>
+                        <p></p>
+                        <!--<p>
+        Expert talks are organized to deliver lectures to students by industry experts. During the course of their studies, student learn various subjects and topics that are already prevalent in industry, for example Java, microwaves, diesel engines. Experts are people who have  excellent work experience on topics that are taught as subjects in institutes.
+        <br><br>When experts talk about a subject they bring the wealth of their experience along with the finer technical details and broad range of examples. This is much more than what the students can learn in classes. One of the very positive aspect of expert talks is triggering the thought process of choosing career fields. Students will be motivated by what they learn from experts and will be able to make better decisions about their future.
+    </p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="labshareModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <!--<h4 class="modal-title" id="myModalLabel">
+        Academic Lab
+    </h4>-->
+                    <h4 class="modal-title" id="myModalLabel">Recruitment Services</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+
+                        <p>
+                            <b>Why Us:</b>
+                        </p>
+                        <ul>
+                            <li>Customer Satisfaction</li>
+                            <li>Custom Solutions</li>
+                            <li>Value Delivery.</li>
+                            <li>Competitive Cost.</li>
+                        </ul>
+                        <p></p>
+                        <p>
+                            <b>Hiring Process:</b>
+                        </p>
+                        <ul>
+                            <li>Understand Requirement</li>
+                            <li>Sourcing Candidates</li>
+                            <li>Shortlisting Candidates</li>
+                            <li>Client Interview Process</li>
+                            <li>Job Offer</li>
+                            <li>Follows-ups till joining day</li>
+                        </ul>
+                        <p></p>
+                        <p>
+                            <b>Handpicked Talent Through:</b>
+                        </p>
+                        <ul>
+                            <li>In-House Database</li>
+                            <li>Referrals</li>
+                            <li>Network</li>
+                            <li>Advertising</li>
+                            <li>Experienced recruitment executives</li>
+                            <li>Custom evaluation</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="nationalconferencesModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Internship and Placement
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            VNurt will provide the students who enrolls with us with the opportunity of placement and internship. This will be only on availability basis and will depend on the market conditions, requirements from corporates etc. As Vnurt have collaboration with
+                            corporates, it can be assumed without doubt that students opting to be part of our programs will have an edge over others for the only reason that the content of our programs is also periodically reviewed by corporates.
+                            <br /><br />Our objective of providing internship is to encourage students to learn industry skills and also to get benefits in terms of learning and may get permanent employment opportunity. <br /><br />Our objective of providing
+                            placment assistance to the students is to provide equal placement opportunities to the ones where there is not enough campus placements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="projectguidenceModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel">Mentorship</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            Academic projects as a part of college curriculum provides good opportunity for students to apply their theoretical knowledge hands on. This is one of the most exciting assignment that a student can complete in college. However due to multiple reasons
+                            we see that many times projects end up being a formality and prospect of learning is not utilized as effectively as should have been.
+                            <br /><br /> At VNURT we believe that this opportunity of learning should be fully exploited. The vision of the program is to also to inculcate the right attitude from the begining.
+                            <br /><br /> We can help students to do this by connecting them with a huge pool of professionals who are registered on our portal. These professionals could be people with a vast experience in industry, education or passionate
+                            individuals who are way above their declared education degrees.
+                            <br /><br /> They can help young students envisage, plan, execute, and successfully present their projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="workshopsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel">Workshops</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            At VNURT we do workshops in areas of Technology and Personal development, few areas are listed below:
+                        </p>
+                        <ul>
+                            <li>Internet of Things (IoT)</li>
+                            <li>Data Science</li>
+                            <li>Machine Learning</li>
+                            <li>Mobile App development</li>
+                            <li>Information security</li>
+                            <li>Cloud Technologies</li>
+                            <li>Industry aligned best processes/ practices</li>
+                            <li>Soft skills</li>
+                            <li>Campus to Corporate</li>
+                            <li>Communication Skills</li>
+                            <li>Wholistic Development</li>
+                        </ul>
+
+                        These workshops helps to improve the employability skills of students. We also understand that the colleges and institutes are also inclined to conduct these workshops. However, the logistics to arrange workshops and availability of good trainers is always
+                        a challenge.
+                        <br /><br /> We have the team that interacts with industry to know what’s the latest in terms of technology required by them. We also have partnership with leading sources who can conduct workshops for students to help them learn
+                        and understand concepts which are in demand.
+                        <br /><br /> The model for this service offering is, based on demand by institutes or based on our recommendation, institutes can approach us for conducting workshops. VNURT will then make it happen.
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="studentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">
+                        What's in it for Students
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            Various researches show that the employability quotient of engineering students in India is very low. Almost 83% of engineering graduates are unfit for employment.
+                            <br />
+                            <br /> VNURT believes that this situation is an opportunity for us to do something that can not only increase the employability of students, but also create a talent force that will make India a global powerhouse of technology.
+                            To do so, we have created a portal VNURT.com which will bring in industry, educational institutes, professionals and students in one place. This ecosystem will improve information sharing, provide opportunities to learn, leverage
+                            on each other’s experience. Through VNURT we also want to ensure that the physical distance from opportunities is not a roadblock for students and anyone from any part of country should get a chance to prove their worth. At
+                            a more granular level student can benefit from this collaboration by.
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Connecting to corporates to see the job and internship opportunities.
+                            </li>
+                            <br />
+                            <li>
+                                Enhancement of their skills by using services provided by experienced professional and training institutes.
+                            </li>
+                            <br />
+                            <li>Looking for Project Guidance and Career Counselling.</li>
+                            <br />
+                        </ul>
+
+                        We are hopeful that this sliution will help us achieve the goal of ensuring an education system that will bring equal opportunities and learning environment.
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="professionalsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">
+                        What's in it for Professionals
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            VNURT platform brings an unique opportunity for those professionals who are interested to share their rich knowledge and expertise, with students as and when suited to professionals.
+                        </p>
+                        <p>
+                            The available ways that professionals can possibly connect are technical sessions, guest lecture, expert talks, academic project mentoring or by simply answering the questions of seeking minds. You can also choose to do it for monetary benefits or as
+                            a volunteer service to nurture the students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="institutesModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">
+                        What's in it for Institutes
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            Institutes would have an opportunity to interact and learn directly from the industry experts/leaders about the changes in trend that industries are adapting for and keep themselves updated all the time. It provides many other important opportunities
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Option to position their resources in more effective ways to stand-out in the crowd.
+                            </li>
+                            <br />
+                            <li>
+                                Option to collaborate with other institutes for the benefits of all especially students.<br />
+                            </li>
+                            <br />
+                            <li>
+                                Resources to offer new ways to the students for developing the latest skill sets.
+                            </li>
+                            <br />
+                            <li>
+                                Platform to reach out larger relevant audiences for the conferences organized.
+                            </li>
+                            <br />
+                            <li>Campus invite opportunities.</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="corporatesModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">
+                        What's in it for Corporates
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="introduction">
+                        <p>
+                            Excellent tool in hand to get the filtered list of candidates for job postings and internships. Get to Know the colleges/institutes for campus placements and be part of them.
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Excellent tool in hand to get the filtered list of candidates for job postings and internships.
+                            </li>
+                            <br />
+                            <li>
+                                Know the colleges/institutes for campus placements and be part of them.
+                            </li>
+                            <br />
+                            <li>
+                                Branding or Marketing of company by being part of the system which is exclusively for students, professionals, institutes and Corporates.
+                            </li>
+                            <br />
+                            <li>
+                                Be socially responsible corporate by helping in reducing the gap between the needs of corporates and education/training provided to the students.
+                            </li>
+                            <br />
+                            <li>
+                                Be part of academic projects to drive the innovations at the root level.
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal animated fadeIn" id="usertypeHelpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+
+        <script>
+            $("#usertypeHelpModal").on("shown.bs.modal", function() {
+                debugger;
+                var value = document.getElementById("UserTypeSignUp").value;
+                if (value != "-1") {
+                    document.getElementsByName("UserType")[value].checked = true;
+                    document.getElementsByName("UserType")[value].click();
+                } else {
+                    document.getElementsByName("UserType")[0].checked = true;
+                    document.getElementsByName("UserType")[0].click();
+                }
+                //var inputs = document.getElementsByTagName("input");
+                //for(var i=0;inputs.length;i++) {
+                //    if(inputs[i].type == "radio" && inputs[i].checked) inputs[i].click();
+            });
+
+            function UserTypeClicked(myRadio) {
+                debugger;
+                document.getElementById("studenthelp").style.display = "none";
+                document.getElementById("professionalhelp").style.display = "none";
+                document.getElementById("institutehelp").style.display = "none";
+                document.getElementById("corporatehelp").style.display = "none";
+                if (myRadio.value == 1)
+                    document.getElementById("professionalhelp").style.display = "block";
+                else if (myRadio.value == 2)
+                    document.getElementById("corporatehelp").style.display = "block";
+                else if (myRadio.value == 3)
+                    document.getElementById("institutehelp").style.display = "block";
+                else document.getElementById("studenthelp").style.display = "block";
+            }
+        </script>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true"> × </span
+              ><span class="sr-only"> Close </span>
+            </button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">
+                        User Type -- Help
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-3">
+                            <label class="radio-inline" for="UserType-0">
+                  <input
+                    type="radio"
+                    name="UserType"
+                    id="UserType-0"
+                    value="0"
+                    onclick="UserTypeClicked(this)"
+                    checked="checked"
+                  />
+                  Student
+                </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="radio-inline" for="UserType-1">
+                  <input
+                    type="radio"
+                    name="UserType"
+                    id="UserType-1"
+                    onclick="UserTypeClicked(this)"
+                    value="1"
+                  />
+                  Professional
+                </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="radio-inline" for="UserType-2">
+                  <input
+                    type="radio"
+                    name="UserType"
+                    id="UserType-2"
+                    onclick="UserTypeClicked(this)"
+                    value="2"
+                  />
+                  Corporate
+                </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="radio-inline" for="UserType-3">
+                  <input
+                    type="radio"
+                    name="UserType"
+                    id="UserType-3"
+                    onclick="UserTypeClicked(this)"
+                    value="3"
+                  />
+                  Institute
+                </label>
+                        </div>
+                    </div>
+
+                    <div id="studenthelp">
+                        <p>
+                            Various researches show that the employability quotient of engineering students in India is very low. Almost 83% of engineering graduates are unfit for employment.
+                            <br />
+                            <br /> VNURT believes that this situation is an opportunity for us to do something that can not only increase the employability of students, but also create a talent force that will make India a global powerhouse of technology.
+                            To do so, we have created a portal VNURT.com which will bring in industry, educational institutes, professionals and students in one place. This ecosystem will improve information sharing, provide opportunities to learn, leverage
+                            on each other’s experience. Through VNURT we also want to ensure that the physical distance from opportunities is not a roadblock for students and anyone from any part of country should get a chance to prove their worth. At
+                            a more granular level student can benefit from this collaboration by.
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Connecting to corporates to see the job and internship opportunities.
+                            </li>
+                            <br />
+                            <li>
+                                Enhancement of their skills by using services provided by experienced professional and training institutes.
+                            </li>
+                            <br />
+                            <li>Looking for Project Guidance and Career Counselling.</li>
+                            <br />
+                        </ul>
+
+                        We are hopeful that this sliution will help us achieve the goal of ensuring an education system that will bring equal opportunities and learning environment.
+                        <p></p>
+                    </div>
+                    <div id="professionalhelp">
+                        <p>
+                            VNURT platform brings an unique opportunity for those professionals who are interested to share their rich knowledge and expertise, with students as and when suited to professionals.
+                        </p>
+                        <p>
+                            The available ways that professionals can possibly connect are technical sessions, guest lecture, expert talks, academic project mentoring or by simply answering the questions of seeking minds. You can also choose to do it for monetary benefits or as
+                            a volunteer service to nurture the students.
+                        </p>
+                    </div>
+                    <div id="institutehelp">
+                        <p>
+                            Institutes would have an opportunity to interact and learn directly from the industry experts/leaders about the changes in trend that industries are adapting for and keep themselves updated all the time. It provides many other important opportunities
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Option to position their resources in more effective ways to stand-out in the crowd.
+                            </li>
+                            <br />
+                            <li>
+                                Option to collaborate with other institutes for the benefits of all especially students.<br />
+                            </li>
+                            <br />
+                            <li>
+                                Resources to offer new ways to the students for developing the latest skill sets.
+                            </li>
+                            <br />
+                            <li>
+                                Platform to reach out larger relevant audiences for the conferences organized.
+                            </li>
+                            <br />
+                            <li>Campus invite opportunities.</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div id="corporatehelp">
+                        <p>
+                            Excellent tool in hand to get the filtered list of candidates for job postings and internships. Get to Know the colleges/institutes for campus placements and be part of them.
+                        </p>
+                        <ul>
+                            <br />
+                            <li>
+                                Excellent tool in hand to get the filtered list of candidates for job postings and internships.
+                            </li>
+                            <br />
+                            <li>
+                                Know the colleges/institutes for campus placements and be part of them.
+                            </li>
+                            <br />
+                            <li>
+                                Branding or Marketing of company by being part of the system which is exclusively for students, professionals, institutes and Corporates.
+                            </li>
+                            <br />
+                            <li>
+                                Be socially responsible corporate by helping in reducing the gap between the needs of corporates and education/training provided to the students.
+                            </li>
+                            <br />
+                            <li>
+                                Be part of academic projects to drive the innovations at the root level.
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--/.preloader-->
+
+    <header id="home">
+        <div class="main-nav">
+            <div class="container">
+                <div id="menuContent">
+                    <script>
+                        var basePath = location.origin;
+
+                        function menuHandler(hashName) {
+                            location.href = location.origin + hashName;
+                            $("#mobileMainMenu").collapse("hide");
+                        }
+                        $("#menuLogo").attr("src", basePath + "/assets/img/logo.png");
+                    </script>
+                    <div class="main-nav navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle glyphicon glyphicon-th" style="
+                      margin-top: 14px;
+                      color: white;
+                      padding: 13px 13px;
+                      font-size: 23px;
+                    " data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                  </button>
+                                <a class="navbar-brand" href="https://www.vnurt.com/#home">
+                                    <h1>
+                                        <img class="img-responsive navbar-logo" id="menuLogo" src="assets/img/logo.png" alt="logo" />
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="navbar-collapse collapse" aria-expanded="true" style="" id="mobileMainMenu">
+                                <ul class="nav navbar-nav navbar-right" style="cursor: pointer">
+                                    <li class="scroll active" id="homeMenu">
+                                        <a onclick="menuHandler(&#39;#home&#39;)">Home</a>
+                                    </li>
+                                    <li class="scroll" id="servicesMenu">
+                                        <a onclick="menuHandler(&#39;#services&#39;)">Portfolio</a>
+                                    </li>
+                                    <!--<li class="scroll" id="featureMenu"><a onclick="menuHandler('#feature')"> IOT </a></li>-->
+                                    <!--<li class="scroll" id="customersMenu"><a onclick="menuHandler('#customers')">Customers</a></li>-->
+                                    <!-- <li class="scroll" id="twitterMenu">
+                                        <a onclick="menuHandler(&#39;#twitter&#39;)">Testimonials</a>
+                                    </li> -->
+                                    <!--<li class="newscroll" id="newsMenu"><a href='/app/content/content.html'>Learn</a></li>-->
+                                    <li class="newscroll" id="newsMenu">
+                                        <a href="https://work4skills.com/" target="_blank">Learn</a
+                      >
+                    </li>
+                    <li class="scroll" id="aboutusMenu">
+                      <a onclick="menuHandler(&#39;#aboutus&#39;)">About Us</a>
+                                    </li>
+                                    <li class="scroll" id="contactMenu">
+                                        <a onclick="menuHandler(&#39;#contact&#39;)">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home-slider" class="carousel slide carousel-fade" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active" style="
+              background-image: url('assets/img/slider/2.jpg');
+              height: 802px;
+            ">
+                    <div class="caption">
+                        <h1 class="animated fadeInLeftBig">
+                            Acquire <span>Industry</span> Ready <span>Skills</span>
+                        </h1>
+                        <p class="animated fadeInRightBig">
+                            LEARN - WORK - EARN - MENTOR
+                        </p>
+                        <br />
+                        <p>
+                            <img class="microsoftLogo" src="assets/img/WhyUs.png" alt="Bootcamp 2.0" /> Bootcamp 2.0 - Simulates real work environment.
+                        </p>
+                        <a class="btn btn-start animated fadeInUpBig" href="https://www.work4skills.com/howItWorks" target="_blank">How it works</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="item"
+            style="
+              background-image: url('assets/img/slider/1.jpg');
+              height: 802px;
+            "
+          >
+            <div class="caption">
+              <h1 class="animated fadeInLeftBig">
+                <span>Forget</span> your <span>recruitment</span> worries
+              </h1>
+              <p class="animated fadeInRightBig">
+                POST JOB - INTERVIEW - OFFER - ONBOARD
+              </p>
+              <br />
+              <p>
+                <img
+                  class="microsoftLogo"
+                  src="assets/img/WhyUs.png"
+                  alt="Recruitment Partner"
+                />
+                Your Recruitment partner search ends here
+              </p>
+              <a
+                class="btn btn-start animated fadeInUpBig"
+                href="https://www.vnurt.com/#services"
+                >More Info</a
+              >                    </div>
+                </div>
+
+                <div class="item" style="
+              background-image: url('assets/img/slider/3.jpg');
+              height: 802px;
+            ">
+                    <div class="caption">
+                        <h1 class="animated fadeInLeftBig">
+                            <span>Solve</span> your <span>Tech</span> Challenges
+                        </h1>
+                        <p class="animated fadeInRightBig">
+                            TECHNOLOGY - PRODUCT - PEOPLE - PROCESS
+                        </p>
+                        <br />
+                        <p>
+                            <img class="microsoftLogo" src="assets/img/WhyUs.png" alt="Complementary Team" /> Build your complementary team
+                        </p>
+                        <a class="btn btn-start animated fadeInUpBig" href="https://www.vnurt.com/#services">More Info</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          class="left-control"
+          href="https://www.vnurt.com/#home-slider"
+          data-slide="prev"
+          ><i class="fal fa-angle-left"></i
+        ></a>
+                        <a class="right-control" href="https://www.vnurt.com/#home-slider" data-slide="next"><i class="fal fa-angle-right"></i
+        ></a>
+
+                        <a id="tohash" href="https://www.vnurt.com/#account"><i class="fal fa-angle-down"></i
+        ></a>
+                    </div>
+                    <!--/#home-slider-->
+    </header>
+    <section class="hero-slider first-child">
+        <ul class="slides">
+
+            <li class="overlay hover-background flex-active-slide" style="height: 798px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                <div class="background-image-holder" style="background: url(&quot;assets/img/about-bg.jpg&quot;) 50% 0%; transform: translate(-0.1px, -3.91111px);">
+                    <img class="background-image" alt="Background Image" src="assets/img/about-bg.jpg" draggable="false" style="display: none;">
+                </div>
+
+                <!-- <div class="foreground-image-holder layer-1">
+        <img class="background-image" alt="Background Image" src="img/layer2.png" />
+      </div>
+
+      <div class="foreground-image-holder layer-2">
+        <img class="background-image" alt="Background Image" src="img/layer3.png" />
+      </div> -->
+
+                <div class="container align-vertical" style="padding-top: 319px;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-9">
+                            <h1 class="text-white">We’re a mobile technology consultancy that helps startups validate their ideas and launch their apps.</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+            </li>
+            <!--end of individual slide-->
+
+            <li class="overlay" style="height: 798px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                <div class="background-image-holder parallax-background skrollable skrollable-between" data-top="-webkit-transform: translate3d(0px,0px, 0px)" data-top-bottom="-webkit-transform: translate3d(0px,200px, 0px)" style="background: url(&quot;assets/img/account-bg.jpg&quot;) 50% 0%; transform: translate3d(0px, 104.981px, 0px);">
+                    <img class="background-image" alt="Background Image" src="assets/img/account-bg.jpg" draggable="false" style="display: none;">
+                </div>
+
+                <div class="container align-vertical" style="padding-top: 319px;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-9">
+                            <h1 class="text-white">Big Dreams Have Little Beginnings - We partner with startups at the most critical time: Their Inception.</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+            </li>
+            <!--end of individual slide-->
+
+            <li class="overlay" style="height: 798px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                <div class="background-image-holder parallax-background skrollable skrollable-between" data-top="-webkit-transform: translate3d(0px,0px, 0px)" data-top-bottom="-webkit-transform: translate3d(0px,200px, 0px)" style="background: url(&quot;img/beyond.jpg&quot;) 50% 0%; transform: translate3d(0px, 104.981px, 0px);">
+                    <img class="background-image" alt="Background Image" src="assets/img/twitter-bg.jpg" draggable="false" style="display: none;">
+                </div>
+
+                <div class="container align-vertical" style="padding-top: 319px;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-9">
+                            <h1 class="text-white">We aim to engineer solutions that extend human interactions in meaningful and impactful ways.</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+            </li>
+            <!--end of individual slide-->
+
+        </ul>
+        <ol class="flex-control-nav flex-control-paging">
+            <li><a class="flex-active">1</a></li>
+            <li><a class="">2</a></li>
+            <li><a class="">3</a></li>
+        </ol>
+        <ul class="flex-direction-nav">
+            <li><a class="flex-prev" href="#">Previous</a></li>
+            <li><a class="flex-next" href="#">Next</a></li>
+        </ul>
+    </section>
+    <!--/#home-->
+
+    <section id="services">
+        <div class="container">
+            <div class="heading wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms" style="
+            visibility: hidden;
+            animation-duration: 1000ms;
+            animation-delay: 800ms;
+            animation-name: none;
+          ">
+                <div class="row">
+                    <div class="text-center col-sm-8 col-sm-offset-2">
+                        <h2>PORTFOLIO</h2>
+                        <!--<p>We provide an array of services and products in the education field. The services we provide to colleges and institutes to help improve the quality of education and make students better informed and aware of what is required of them to be better professionals.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="text-center our-services">
+                <div class="row">
+                    <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 450ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/Bootcamp.jpeg" alt="" />
+                            <!--<i class="fa fa-umbrella"></i>-->
+                        </div>
+                        <div class="service-info">
+                            <h3>Bootcamp 2.0</h3>
+                            <p>
+                                Bootcamp simulates real work company setup and focus on hands-on approach and assistance. In Bootcamps, we emphasize on problem solving and application instead of memorizing content.
+                            </p>
+                            <h4>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#experttalksModal" data-dismiss="modal">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 300ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/ReceruitmenService.jpg" alt="" />
+                        </div>
+                        <div class="service-info">
+                            <h3>Recruitment Services</h3>
+                            <p>
+                                Finding talent at the right time is always a challenge for organizations, As a recruitment service provider, we have single point agenda to help you source, filter, assess &amp; help recruit the most appropriate candidate.
+                            </p>
+                            <h4>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#labshareModal" data-dismiss="modal">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 550ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/software-development-services.png" alt="" />
+                        </div>
+                        <div class="service-info">
+                            <h3>Software Development Services</h3>
+                            <p>
+                                Whether you are a start-up or an established business, we are ready to assist you at every stage of software development life cycle — from conceptualization and consulting to development and support.
+                            </p>
+                            <h4>
+                                <a href="https://www.vnurt.com/views/services/softwareservices.html" target="_blank">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 450ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/workshops.jpg" alt="" />
+                            <!--<i class="fa fa-umbrella"></i>-->
+                        </div>
+                        <div class="service-info">
+                            <h3>Workshops &amp; Online Events</h3>
+                            <p>
+                                An instructor led session conducted with the objective of training participants on a wide array of subjects varying from technology to soft skills. Focus is on real learning by, hands on exercise and participation.
+                            </p>
+                            <h4>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#workshopsModal" data-dismiss="modal">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 750ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/ComplementaryTeam.png" alt="" />
+                        </div>
+                        <div class="service-info">
+                            <h3>Complementary Team</h3>
+                            <p>
+                                The VNurt complementary team closely works with the in-house Client team to deliver work. It is a continuous engagement with very little upfront liability and offers flexibility. Execution happens as per scrum.
+                            </p>
+                            <h4>
+                                <a href="https://work4skills.com/" target="_blank">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms" style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 850ms;
+                animation-name: none;
+              ">
+                        <div class="service-icon">
+                            <img class="service-image" src="assets/img/Internships.png" alt="" />
+                        </div>
+                        <div class="service-info">
+                            <h3>Internship and Placement</h3>
+                            <p>
+                                Provides Internship and Placement assistance to the students through our collaboration with corporates. We also help students get the Internship and Placements through our direct network.
+                            </p>
+                            <h4>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#nationalconferencesModal" data-dismiss="modal">Tell me more</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects-wrapper clearfix">
+            <div class="container">
+                <div class="row">
+                    <ul class="filters">
+                        <li data-filter="*" class="active">All</li>
+                        <li data-filter=".startup" class="">Services</li>
+                        <li data-filter=".neapstartup" class="">Clint Testimonials</li>
+                    </ul>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+
+            <div class="container">
+                <div class="projects-container column-projects" style="position: relative; height: 1890px;">
+                    <div class="col-md-4 col-sm-6 project startup image-holder" style="position: absolute; left: 0px; top: 0px; height: 350px;">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/Bootcamp.jpeg&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/Bootcamp.jpeg" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 13.0015px;">
+                                <h3 class="text-white">
+                                    Bootcamp simulates real work company setup and focus on hands-on approach and assistance. In Bootcamps, we emphasize on problem solving and application instead of memorizing content.
+
+                                </h3>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#experttalksModal" data-dismiss="modal" class="btn btn-primary btn-white">Tell me more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 project startup image-holder" style="position: absolute; left: 0px; top: 315px;height: 350px">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/ReceruitmenService.jpg&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/ReceruitmenService.jpg" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 29.0083px;">
+                                <h3 class="text-white">
+                                    Finding talent at the right time is always a challenge for organizations, As a recruitment service provider, we have single point agenda to help you source, filter, assess &amp; help recruit the most appropriate candidate.
+                                </h3>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#labshareModal" data-dismiss="modal" class="btn btn-primary btn-white">Tell me more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of individual project-->
+
+                    <div class="col-md-4 col-sm-6 project startup image-holder" style="position: absolute; left: 0px; top: 630px;height: 350px">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/software-development-services.png&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/software-development-services.png" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 5.417px;">
+                                <h3 class="text-white">
+                                    Whether you are a start-up or an established business, we are ready to assist you at every stage of software development life cycle — from conceptualization and consulting to development and support.
+                                </h3>
+                                <a href="https://www.vnurt.com/views/services/softwareservices.html" target="_blank" class="btn btn-primary btn-white">Tell me more</a> </div>
+                        </div>
+                    </div>
+                    <!--end of individual project-->
+                    <div class="col-md-4 col-sm-6 project startup image-holder" style="position: absolute; left: 0px; top: 945px;height: 350px">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/workshops.jpg&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/workshops.jpg" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 13.0003px;">
+                                <h3 class="text-white">
+                                    An instructor led session conducted with the objective of training participants on a wide array of subjects varying from technology to soft skills. Focus is on real learning by, hands on exercise and participation.
+                                </h3>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#workshopsModal" data-dismiss="modal" class="btn btn-primary btn-white">Tell me more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of individual project-->
+
+                    <div class="col-md-4 col-sm-6 project neapstartup image-holder" style="position: absolute; left: 0px; top: 1260px;height: 350px">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/ComplementaryTeam.png&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/ComplementaryTeam.png" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 13.232px;">
+                                <h3 class="text-white">
+                                    The VNurt complementary team closely works with the in-house Client team to deliver work. It is a continuous engagement with very little upfront liability and offers flexibility. Execution happens as per scrum.
+                                </h3>
+                                <a href="https://work4skills.com/" target="_blank" class="btn btn-primary btn-white">Tell me more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of individual project-->
+
+                    <div class="col-md-4 col-sm-6 project startup image-holder" style="position: absolute; left: 0px; top: 1575px;height: 350px">
+                        <div class="background-image-holder" style="background: url(&quot;assets/img/Internships.png&quot;) 50% 0%;">
+                            <img class="background-image" alt="Background Image" src="assets/img/Internships.png" style="display: none;">
+                        </div>
+                        <div class="hover-state">
+                            <div class="align-vertical" style="padding-top: 13.0097px;">
+                                <h3 class="text-white">
+                                    Provides Internship and Placement assistance to the students through our collaboration with corporates. We also help students get the Internship and Placements through our direct network.
+                                </h3>
+                                <a href="https://www.vnurt.com/#" data-toggle="modal" data-target="#nationalconferencesModal" data-dismiss="modal" class="btn btn-primary btn-white">Tell me more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of individual project-->
+
+                </div>
+                <!--end of projects-container-->
+            </div>
+            <!--end of container-->
+
+        </div>
+    </section>
+    <section id="twitter" class="parallax">
+        <div>
+            <a class="twitter-left-control" href="https://www.vnurt.com/#twitter-carousel" role="button" data-slide="prev"><i class="fal fa-angle-left"></i
+        ></a>
+            <a class="twitter-right-control" href="https://www.vnurt.com/#twitter-carousel" role="button" data-slide="next"><i class="fal fa-angle-right"></i
+        ></a>
+            <div class="container">
+                <div class="row">
+                    <!--  <h2 class="text-center">Client Testimonials</h2> -->
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="
+                      visibility: visible;
+                      animation-duration: 1000ms;
+                      animation-delay: 300ms;
+                      animation-name: fadeIn;
+                    ">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/LimaHubLogo.png" alt="" />
+                                        <h4>Viji Vennelakanti, CTO</h4>
+                                    </div>
+                                    <p>
+                                        VNURT was our Android development partner at Lima Payments. I found Amit Agrawal from their team to be very professional, responsible, and knowledgeable. He was always willing to work out a solution to any challenge thrown his way. He also offered to
+                                        help us address some issues with AWS even though this was outside the scope of their contract. He has excellent communication skills and we were able to work well together even though we worked entirely remotely.
+                                        Amit and the entire team at VNURT truly understand the meaning of the word partnership. I would highly recommend VNURT and him for any technical partnership. I am confident of his ability to hire and retain the
+                                        right talent to make any such partnership a success.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/Ritesh.jpeg" alt="" />
+                                        <h4>Ritesh, Student</h4>
+                                    </div>
+                                    <p>
+                                        I was seeking for some jobs in the college placement but I was lucky that I found VNurt as my first company where I did internship. VNurt sets an environment where you can feel as if you're working in a real company following the Agile methodologies.
+                                        VNurt also gave me a platform to be a leader of a team through which I learnt how to be a good motivator and increase the overall output of a team. After my internship I played role of a mentor for the new team
+                                        to help them ramp-up fast and be productive. I would highly recommend VNurt to others. Thank You!!.<br /> Placed in:
+                                        <b>PRODUCT BASED INDIAN STARTUP</b>
+                                    </p>
+                                </div>
+                                <div class="item active">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/Tejaswinee.jpeg" alt="" />
+                                        <h4>Tejaswinee, Student</h4>
+                                    </div>
+                                    <p>
+                                        Working at VNurt offers an opportunity to develop as a professional based on your interest. The objective of the organisation is to train, evaluate and develop an individual professionally and offer placement in a reputed company. As an intern, my approach
+                                        and contributions were valued with unbiased evaluation as I worked alongside the respectful and experienced mentors. The internship was a worthwhile experience and I feel that it has prepared me well enough for
+                                        my professional career. This has been an excellent internship experience with VNurt and I couldn’t recommend the organisation more highly.<br /> B.E. - Computer science &amp;
+                                        engineering (batch 2020)<br /> Placed in: <b>PRODUCT BASED MNC</b>
+                                    </p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/YourPointManLogo.png" alt="" />
+                                        <h4>Sandeep David Rao, Founder</h4>
+                                    </div>
+                                    <p>
+                                        I was on the lookout for a web development agency for my website. Amit from VNurt was among those agencies. The thing that struck me about Amit was how friendly and understanding he was. From the start, his team made it clear that they were interested
+                                        in a long term business relationship rather than doing a quick job. Their inputs were valuable and were willing to accommodate even the smallest changes. Thank you to Amit and team for a nice, clean website that
+                                        I am proud to share with my customers.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/InnoveIntellectLogo.jpg" alt="" />
+                                        <h4>Pooja Kumar, CEO</h4>
+                                    </div>
+                                    <p>
+                                        VNurt team is absolutely the best in designing and development. I hired them for rebuilding my website and told them all my requirements and preferences. They understood everything very easily and also recommended me some better alternatives wherever
+                                        possible. They ensured top quality, timely delivery and satisfactory support till the end of the project. I highly recommend them.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <div class="twitter-icon text-center">
+                                        <img class="" src="assets/img/sonal.jpg" alt="" />
+                                        <h4>Sonal Vyas, Founder</h4>
+                                    </div>
+                                    <p>
+                                        Quality with Timely delivery at Best Price. You delivered it all. I really appreciate your patience with lack of my technical know how, and your personal involvement in creating such a fantastic website for me. I look forward to again working with you
+                                        again in the future. And would highly recommend you to others. Thank You!!!.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#twitter-->
+    <!--<section id="aboutus" class="parallax" onscroll="onFocusSection('ABOUTUS')">-->
+    <section id="aboutus" class="parallax">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-sm-6">-->
+                <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" style="
+              visibility: hidden;
+              animation-duration: 1000ms;
+              animation-delay: 300ms;
+              animation-name: none;
+            ">
+                    <h2 class="text-center">About us</h2>
+                    <p>
+                        Friends for many years and now part of one team that is passionate about the idea of revolutionizing the way education is imparted today. All together we have more than 60 years of rich experience in IT and Education field.
+                    </p>
+                    <p>
+                        We want to integrate technology in education sector in a way that we are able to bridge the gap between the needs and means available to students. This will also help to prepare better and more employable workforce for industry.
+                    </p>
+                    <!--  <h2 class="text-center">Guiding Principles</h2>
+                    <p>Guiding principles for our team are:</p>
+                    <ul>
+                        <li>
+                            Provide equal learning opportunities by optimizing available resources
+                        </li>
+                        <li>
+                            Using technology as enabler for bridging existing gaps in education industry
+                        </li>
+                        <li>Passion to always deliver solutions with quality focus</li>
+                        <li>what you need is you what you get</li>
+                        <li>
+                            Be an agent of change to make world class technology and tools accessible to our students.
+                        </li>
+                    </ul>
+                    <p></p> -->
+                </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+    <section id="block-block-14" class="block block-block dark p-0">
+        <div class="boxes"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div data-bg-color="#1c1e20" class="col-md-4 box-block" style="background-color: rgb(28, 30, 32);color: white; font-size: 16px;">
+                    <div class="number-box" style="height: auto; min-height: 443px;">
+                        <h3>GUIDING PRINCIPLES<span class="red-dot"></span></h3>
+                        <h4></h4>
+
+                        <br>
+                        <ul>
+                            <li>
+                                Provide equal learning opportunities by optimizing available resources
+                            </li>
+                            <li>
+                                Using technology as enabler for bridging existing gaps in education industry
+                            </li>
+                            <li>Passion to always deliver solutions with quality focus</li>
+                            <li>what you need is you what you get</li>
+                            <li>
+                                Be an agent of change to make world class technology and tools accessible to our students.
+                            </li>
+                        </ul>
+                        <p></p>
+
+                    </div>
+                </div>
+                <div data-bg-color="#25282b" class="col-md-4 box-block" style="background-color: rgb(37, 40, 43);color: white; font-size: 16px;">
+                    <div class="number-box" style="height: auto; min-height: 443px;">
+                        <h3>OUR VISION<span class="red-dot"></span></h3>
+                        <h4></h4>
+
+                        <br>
+                        <ul>
+                            <li>
+                                At VNURT we continually endeavor to bridge gaps between educational practices and industry requirements using technology as enabler.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-bg-color="#2A2D30" class="col-md-4 box-block" style="background-color: rgb(42, 45, 48);color: white; font-size: 16px;">
+                    <div class="number-box" style="height: auto; min-height: 443px;">
+                        <h3>OUR MISSION<span class="red-dot"></span></h3>
+                        <h4></h4>
+
+                        <br>
+                        <ul>
+                            <li>
+                                To create equal learning and development opportunities for all students by creating a collaborative engagement of academia and industry.
+                                <li>
+                                    <ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end of row-->
+        </div>
+        <!-- end of container-->
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms" style="
+              visibility: hidden;
+              animation-duration: 1200ms;
+              animation-delay: 300ms;
+              animation-name: none;
+            ">
+                    <h1>Meet The Folks Behind VNurt</h1>
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>-->
+                </div>
+            </div>
+            <div class="team-members">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms" style="
+                  visibility: hidden;
+                  animation-duration: 1000ms;
+                  animation-delay: 300ms;
+                  animation-name: none;
+                ">
+                            <div class="member-image">
+                                <img class="img-responsive" src="assets/img/1.jpg" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h3>Hemant</h3>
+                                <h4>CO Founder</h4>
+                                <p>
+                                    An IIM Bangalore Alumni who is passionate about entrepreneurship and whatever he does. Loves to talk about new ideas and a marketer by choice. Playing all the possible roles (changing hats) required every day to take VNurt to the next level.
+                                </p>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <a class="envelope" target="_blank" href="mailto:hemant@vnurt.com"><i class="fa fa-envelope"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" target="_blank" href="https://twitter.com/Hemantsharm5"><i class="fab fa-twitter"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a class="linkedin" target="_blank" href="https://in.linkedin.com/in/hemant-sharma-975b6b19"><i class="fab fa-linkedin"></i
+                      ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms" style="
+                  visibility: hidden;
+                  animation-duration: 1000ms;
+                  animation-delay: 500ms;
+                  animation-name: none;
+                ">
+                            <div class="member-image">
+                                <img class="img-responsive" src="assets/img/2.jpg" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h3>Amit</h3>
+                                <h4>CO Founder</h4>
+                                <p>
+                                    A product person, works to strike an optimum balance between product, people and processes. Passionate entrepreneur, responsible for strategic direction, execution of decisions, building partnerships and strategic alliances.
+                                </p>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <a class="envelope" target="_blank" href="mailto:amit.agrawal@vnurt.com"><i class="fa fa-envelope"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" target="_blank" href="https://twitter.com/aagrawalvnurt"><i class="fab fa-twitter"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a class="linkedin" target="_blank" href="https://in.linkedin.com/in/agrawalamit2"><i class="fab fa-linkedin"></i
+                      ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms" style="
+                  visibility: hidden;
+                  animation-duration: 1000ms;
+                  animation-delay: 800ms;
+                  animation-name: none;
+                ">
+                            <div class="member-image">
+                                <img class="img-responsive" src="assets/img/3.jpg" alt="" />
+                            </div>
+                            <div class="member-info">
+                                <h3>Shridutta</h3>
+                                <h4>CO Founder</h4>
+                                <p>
+                                    Responsible for VNurt's technical vision. Like to observe and contemplate. Emerging trends, technology, philosophy and biking.
+                                </p>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <a class="envelope" target="_blank" href="https://www.vnurt.com/#"><i class="fa fa-envelope"></i
+                      ></a>
+                                    </li>
+                                    <!--<li><a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                    <li>
+                                        <a class="twitter" target="_blank" href="https://www.vnurt.com/#"><i class="fab fa-twitter"></i
+                      ></a>
+                                    </li>
+                                    <li>
+                                        <a class="linkedin" target="_blank" href="https://www.vnurt.com/#"><i class="fab fa-linkedin"></i
+                      ></a>
+                                    </li>
+
+                                    <!--<li><a class="envelope" target="_blank" href="mailto:founders@vnurt.com"><i class="fa fa-envelope"></i></a></li>
+                                    <li><a class="twitter" target="_blank" href="https://twitter.com/SDPachori"><i class="fa fa-twitter"></i></a></li>
+                                    <--<li><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/shri-dutta-pachori-17a843b"><i class="fa fa-linkedin"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#team-->
+
+    <section id="contact" class="parallax">
+        <div id="google-map" class="wow fadeIn" data-latitude="12.9389974" data-longitude="77.5215734" data-wow-duration="1000ms" data-wow-delay="400ms" style="
+          visibility: hidden;
+          animation-duration: 1000ms;
+          animation-delay: 400ms;
+          animation-name: none;
+          position: relative;
+          overflow: hidden;
+        ">
+            <div style="
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(229, 227, 223);
+          ">
+                <div class="gm-style" style="
+              position: absolute;
+              z-index: 0;
+              left: 0px;
+              top: 0px;
+              height: 100%;
+              width: 100%;
+              padding: 0px;
+              border-width: 0px;
+              margin: 0px;
+            ">
+                    <div tabindex="0" style="
+                position: absolute;
+                z-index: 0;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                border-width: 0px;
+                margin: 0px;
+                cursor: url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur'),
+                  default;
+                touch-action: pan-x pan-y;
+              ">
+                        <div style="
+                  z-index: 1;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  width: 100%;
+                  transform: translate(0px, 0px);
+                ">
+                            <div style="
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 100;
+                    width: 100%;
+                  ">
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0">
+                                    <div style="
+                        position: absolute;
+                        z-index: 986;
+                        transform: matrix(1, 0, 0, 1, -24, -16);
+                      ">
+                                        <div style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -256px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -256px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: 0px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: 256px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: 256px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -512px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -512px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: 512px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: 512px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -768px;
+                          top: 0px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                        <div style="
+                          position: absolute;
+                          left: -768px;
+                          top: -256px;
+                          width: 256px;
+                          height: 256px;
+                        ">
+                                            <div style="width: 256px; height: 256px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 101;
+                    width: 100%;
+                  "></div>
+                            <div style="
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 102;
+                    width: 100%;
+                  "></div>
+                            <div style="
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: 103;
+                    width: 100%;
+                  ">
+                                <div style="
+                      width: 27px;
+                      height: 43px;
+                      overflow: hidden;
+                      position: absolute;
+                      left: -14px;
+                      top: -43px;
+                      z-index: 0;
+                    ">
+                                    <img alt="" src="assets/spotlight-poi2.png" draggable="false" style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 27px;
+                        height: 43px;
+                        user-select: none;
+                        border: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        max-width: none;
+                      " />
+                                </div>
+                                <div style="position: absolute; left: 0px; top: 0px; z-index: -1">
+                                    <div style="
+                        position: absolute;
+                        z-index: 986;
+                        transform: matrix(1, 0, 0, 1, -24, -16);
+                      ">
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -256px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -256px;
+                          top: -256px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 0px;
+                          top: -256px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 256px;
+                          top: -256px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 256px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -512px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -512px;
+                          top: -256px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 512px;
+                          top: -256px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: 512px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -768px;
+                          top: 0px;
+                        "></div>
+                                        <div style="
+                          width: 256px;
+                          height: 256px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -768px;
+                          top: -256px;
+                        "></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0">
+                                <div style="
+                      position: absolute;
+                      z-index: 986;
+                      transform: matrix(1, 0, 0, 1, -24, -16);
+                    ">
+                                    <div style="
+                        position: absolute;
+                        left: -256px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: -256px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(1)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 0px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(2)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 256px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(3)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(4)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 256px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(5)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 512px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(6)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: 512px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(7)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: -768px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(8)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: -768px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(9)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: -512px;
+                        top: 0px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(10)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                    <div style="
+                        position: absolute;
+                        left: -512px;
+                        top: -256px;
+                        width: 256px;
+                        height: 256px;
+                        transition: opacity 200ms linear 0s;
+                      ">
+                                        <img draggable="false" alt="" role="presentation" src="assets/vt(11)" style="
+                          width: 256px;
+                          height: 256px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gm-style-pbc" style="
+                  z-index: 2;
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  padding: 0px;
+                  border-width: 0px;
+                  margin: 0px;
+                  left: 0px;
+                  top: 0px;
+                  opacity: 0;
+                ">
+                            <p class="gm-style-pbt"></p>
+                        </div>
+                        <div style="
+                  z-index: 3;
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  padding: 0px;
+                  border-width: 0px;
+                  margin: 0px;
+                  left: 0px;
+                  top: 0px;
+                  touch-action: pan-x pan-y;
+                ">
+                            <div style="
+                    z-index: 4;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 100%;
+                    transform: translate(0px, 0px);
+                  ">
+                                <div style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      z-index: 104;
+                      width: 100%;
+                    "></div>
+                                <div style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      z-index: 105;
+                      width: 100%;
+                    "></div>
+                                <div style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      z-index: 106;
+                      width: 100%;
+                    ">
+                                    <div style="
+                        width: 27px;
+                        height: 43px;
+                        overflow: hidden;
+                        position: absolute;
+                        opacity: 0;
+                        left: -14px;
+                        top: -43px;
+                        z-index: 0;
+                      ">
+                                        <img alt="" src="assets/spotlight-poi2.png" draggable="false" usemap="#gmimap0" style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          width: 27px;
+                          height: 43px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        " /><map name="gmimap0" id="gmimap0"><area
+                          log="miw"
+                          coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75"
+                          shape="poly"
+                          title=""
+                          style="cursor: pointer; touch-action: none"
+                      /></map>
+                                    </div>
+                                </div>
+                                <div style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      z-index: 107;
+                      width: 100%;
+                    "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe aria-hidden="true" frameborder="0" tabindex="-1" style="
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                border: none;
+              " src="assets/html/saved_resource.html"></iframe>
+                    <div style="
+                margin-left: 5px;
+                margin-right: 5px;
+                z-index: 1000000;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+              ">
+                        <a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=12.938997,77.521573&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="
+                  position: static;
+                  overflow: visible;
+                  float: none;
+                  display: inline;
+                ">
+                            <div style="width: 66px; height: 26px; cursor: pointer">
+                                <img alt="" src="assets/img/google4.png" draggable="false" style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      width: 66px;
+                      height: 26px;
+                      user-select: none;
+                      border: 0px;
+                      padding: 0px;
+                      margin: 0px;
+                    " /></div>
+                        </a>
+                    </div>
+                    <div style="
+                background-color: white;
+                padding: 15px 21px;
+                border: 1px solid rgb(171, 171, 171);
+                font-family: Roboto, Arial, sans-serif;
+                color: rgb(34, 34, 34);
+                box-sizing: border-box;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px;
+                z-index: 10000002;
+                display: none;
+                width: 300px;
+                height: 180px;
+                position: absolute;
+                left: 563px;
+                top: 85px;
+              ">
+                        <div style="
+                  padding: 0px 0px 10px;
+                  font-size: 16px;
+                  box-sizing: border-box;
+                ">
+                            Map Data
+                        </div>
+                        <div style="font-size: 13px">Map data ©2020 Google</div>
+                        <button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="
+                  background: none;
+                  display: block;
+                  border: 0px;
+                  margin: 0px;
+                  padding: 0px;
+                  position: absolute;
+                  cursor: pointer;
+                  user-select: none;
+                  top: 0px;
+                  right: 0px;
+                  width: 37px;
+                  height: 37px;
+                ">
+                <img
+                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                  style="
+                    pointer-events: none;
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    margin: 12px;
+                  "
+                />
+              </button>
+                    </div>
+                    <div class="gmnoprint" style="
+                z-index: 1000001;
+                position: absolute;
+                right: 166px;
+                bottom: 0px;
+                width: 121px;
+              ">
+                        <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px">
+                            <div style="
+                    opacity: 0.7;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                  ">
+                                <div style="width: 1px"></div>
+                                <div style="
+                      background-color: rgb(245, 245, 245);
+                      width: auto;
+                      height: 100%;
+                      margin-left: 1px;
+                    "></div>
+                            </div>
+                            <div style="
+                    position: relative;
+                    padding-right: 6px;
+                    padding-left: 6px;
+                    box-sizing: border-box;
+                    font-family: Roboto, Arial, sans-serif;
+                    font-size: 10px;
+                    color: rgb(68, 68, 68);
+                    white-space: nowrap;
+                    direction: ltr;
+                    text-align: right;
+                    vertical-align: middle;
+                    display: inline-block;
+                  ">
+                                <a style="
+                      text-decoration: none;
+                      cursor: pointer;
+                      display: none;
+                    ">Map Data</a
+                  ><span>Map data ©2020 Google</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="gmnoscreen"
+              style="position: absolute; right: 0px; bottom: 0px"
+            >
+              <div
+                style="
+                  font-family: Roboto, Arial, sans-serif;
+                  font-size: 11px;
+                  color: rgb(68, 68, 68);
+                  direction: ltr;
+                  text-align: right;
+                  background-color: rgb(245, 245, 245);
+                "
+              >
+                Map data ©2020 Google
+              </div>
+            </div>
+            <div
+              class="gmnoprint gm-style-cc"
+              draggable="false"
+              style="
+                z-index: 1000001;
+                user-select: none;
+                height: 14px;
+                line-height: 14px;
+                position: absolute;
+                right: 95px;
+                bottom: 0px;
+              "
+            >
+              <div
+                style="
+                  opacity: 0.7;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                "
+              >
+                <div style="width: 1px"></div>
+                <div
+                  style="
+                    background-color: rgb(245, 245, 245);
+                    width: auto;
+                    height: 100%;
+                    margin-left: 1px;
+                  "
+                ></div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  padding-right: 6px;
+                  padding-left: 6px;
+                  box-sizing: border-box;
+                  font-family: Roboto, Arial, sans-serif;
+                  font-size: 10px;
+                  color: rgb(68, 68, 68);
+                  white-space: nowrap;
+                  direction: ltr;
+                  text-align: right;
+                  vertical-align: middle;
+                  display: inline-block;
+                "
+              >
+                <a
+                  href="https://www.google.com/intl/en-US_US/help/terms_maps.html"
+                  target="_blank"
+                  rel="noopener"
+                  style="
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: rgb(68, 68, 68);
+                  "
+                  >Terms of Use</a
+                >
+              </div>
+            </div>
+            <button
+              draggable="false"
+              title="Toggle fullscreen view"
+              aria-label="Toggle fullscreen view"
+              type="button"
+              class="gm-control-active gm-fullscreen-control"
+              style="
+                background: none rgb(255, 255, 255);
+                border: 0px;
+                margin: 10px;
+                padding: 0px;
+                position: absolute;
+                cursor: pointer;
+                user-select: none;
+                border-radius: 2px;
+                height: 40px;
+                width: 40px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                overflow: hidden;
+                top: 0px;
+                right: 0px;
+              "
+            >
+              <img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px"
+              /><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px"
+              /><img
+                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                style="height: 18px; width: 18px"
+              />
+            </button>
+            <div
+              draggable="false"
+              class="gm-style-cc"
+              style="
+                user-select: none;
+                height: 14px;
+                line-height: 14px;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+              "
+            >
+              <div
+                style="
+                  opacity: 0.7;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                "
+              >
+                <div style="width: 1px"></div>
+                <div
+                  style="
+                    background-color: rgb(245, 245, 245);
+                    width: auto;
+                    height: 100%;
+                    margin-left: 1px;
+                  "
+                ></div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  padding-right: 6px;
+                  padding-left: 6px;
+                  box-sizing: border-box;
+                  font-family: Roboto, Arial, sans-serif;
+                  font-size: 10px;
+                  color: rgb(68, 68, 68);
+                  white-space: nowrap;
+                  direction: ltr;
+                  text-align: right;
+                  vertical-align: middle;
+                  display: inline-block;
+                "
+              >
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  title="Report errors in the road map or imagery to Google"
+                  href="https://www.google.com/maps/@12.9389974,77.5215734,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                  style="
+                    font-family: Roboto, Arial, sans-serif;
+                    font-size: 10px;
+                    color: rgb(68, 68, 68);
+                    text-decoration: none;
+                    position: relative;
+                  "
+                  >Report a map error</a
+                >
+              </div>
+            </div>
+            <div
+              class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+              draggable="false"
+              controlwidth="40"
+              controlheight="81"
+              style="
+                margin: 10px;
+                user-select: none;
+                position: absolute;
+                bottom: 95px;
+                right: 40px;
+              "
+            >
+              <div
+                class="gmnoprint"
+                controlwidth="40"
+                controlheight="81"
+                style="position: absolute; left: 0px; top: 0px"
+              >
+                <div
+                  draggable="false"
+                  style="
+                    user-select: none;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    background-color: rgb(255, 255, 255);
+                    width: 40px;
+                    height: 81px;
+                  "
+                >
+                  <button
+                    draggable="false"
+                    title="Zoom in"
+                    aria-label="Zoom in"
+                    type="button"
+                    class="gm-control-active"
+                    style="
+                      background: none;
+                      display: block;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      cursor: pointer;
+                      user-select: none;
+                      overflow: hidden;
+                      width: 40px;
+                      height: 40px;
+                      top: 0px;
+                      left: 0px;
+                    "
+                  >
+                    <img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    />
+                  </button>
+                  <div
+                    style="
+                      position: relative;
+                      overflow: hidden;
+                      width: 30px;
+                      height: 1px;
+                      margin: 0px 5px;
+                      background-color: rgb(230, 230, 230);
+                      top: 0px;
+                    "
+                  ></div>
+                  <button
+                    draggable="false"
+                    title="Zoom out"
+                    aria-label="Zoom out"
+                    type="button"
+                    class="gm-control-active"
+                    style="
+                      background: none;
+                      display: block;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      cursor: pointer;
+                      user-select: none;
+                      overflow: hidden;
+                      width: 40px;
+                      height: 40px;
+                      top: 0px;
+                      left: 0px;
+                    "
+                  >
+                    <img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="gmnoprint"
+                controlwidth="40"
+                controlheight="40"
+                style="display: none; position: absolute"
+              >
+                <div style="width: 40px; height: 40px">
+                  <button
+                    draggable="false"
+                    title="Rotate map 90 degrees"
+                    aria-label="Rotate map 90 degrees"
+                    type="button"
+                    class="gm-control-active"
+                    style="
+                      background: none rgb(255, 255, 255);
+                      display: none;
+                      border: 0px;
+                      margin: 0px 0px 32px;
+                      padding: 0px;
+                      position: relative;
+                      cursor: pointer;
+                      user-select: none;
+                      width: 40px;
+                      height: 40px;
+                      top: 0px;
+                      left: 0px;
+                      overflow: hidden;
+                      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                      border-radius: 2px;
+                    "
+                  >
+                    <img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="height: 18px; width: 18px"
+                    /></button
+                  ><button
+                    draggable="false"
+                    title="Tilt map"
+                    aria-label="Tilt map"
+                    type="button"
+                    class="gm-tilt gm-control-active"
+                    style="
+                      background: none rgb(255, 255, 255);
+                      display: block;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      position: relative;
+                      cursor: pointer;
+                      user-select: none;
+                      width: 40px;
+                      height: 40px;
+                      top: 0px;
+                      left: 0px;
+                      overflow: hidden;
+                      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                      border-radius: 2px;
+                    "
+                  >
+                    <img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px"
+                    /><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                      style="width: 18px"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            background-color: white;
+            font-weight: 500;
+            font-family: Roboto, sans-serif;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            top: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+            left: 50%;
+            max-width: 375px;
+            position: absolute;
+            transform: translateX(-50%);
+            width: calc(100% - 10px);
+            z-index: 1;
+          "
+        >
+          <div>
+            <img
+              alt=""
+              src="assets/html/google_gray.svg"
+              draggable="false"
+              style="
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                height: 17px;
+                vertical-align: middle;
+                width: 52px;
+                user-select: none;
+              "
+            />
+          </div>
+          <div style="line-height: 20px; margin: 15px 0px">
+            <span style="color: rgba(0, 0, 0, 0.87); font-size: 14px"
+              >This page can't load Google Maps correctly.</span
+            >
+          </div>
+          <table style="width: 100%">
+            <tr>
+              <td style="line-height: 16px; vertical-align: middle">
+                <a
+                  href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors"
+                  target="_blank"
+                  rel="noopener"
+                  style="color: rgba(0, 0, 0, 0.54); font-size: 12px"
+                  >Do you own this website?</a
+                >
+              </td>
+              <td style="text-align: right">
+                <button class="dismissButton">OK</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+     <!--  <div id="contact-us">
+        <div class="container">
+          <div class="row">
+            <div
+              class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="300ms"
+              style="
+                visibility: hidden;
+                animation-duration: 1000ms;
+                animation-delay: 300ms;
+                animation-name: none;
+              "
+            >
+              <h2>Contact Us</h2>
+              <p>
+                Thoughts are varying in nature - Email us your query or share
+                the voice
+              </p>
+            </div>
+          </div>
+          <div id="contact-us"
+            class="contact-form wow fadeIn"
+            data-wow-duration="1000ms"
+            data-wow-delay="600ms"
+            style="
+              visibility: hidden;
+              animation-duration: 1000ms;
+              animation-delay: 600ms;
+              animation-name: none;
+            "
+          >
+            <div class="row">
+              <div class="col-sm-6">
+                <form
+                  id="main-contact-form"
+                  autocomplete="off"
+                  name="contact-form"
+                  action="javascript:sendemail(this);"
+                >
+                  <div
+                    class="row wow fadeinup"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="300ms"
+                    style="
+                      visibility: hidden;
+                      animation-duration: 1000ms;
+                      animation-delay: 300ms;
+                      animation-name: none;
+                    "
+                  >
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input
+                          id="ContactUs_Name"
+                          name="Name"
+                          type="text"
+                          maxlength="60"
+                          class="form-control"
+                          placeholder="Name"
+                          required="required"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <select
+                          id="ContactUs_Purpose"
+                          class="form-control"
+                          name="Purpose"
+                          placeholder="Select Purpose"
+                          required="required"
+                        >
+                          <option value="0">Enquiry</option>
+                          <option value="1">Feedback</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="row wow fadeinup"
+                    style="visibility: hidden; animation-name: none"
+                  >
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input
+                          type="tel"
+                          id="ContactUs_Phone"
+                          name="PhoneNumber"
+                          pattern="^[0-9]*$"
+                          class="form-control"
+                          minlength="10"
+                          maxlength="10"
+                          placeholder="Enter your contact number"
+                          required="required"
+                          oninvalid="setCustomValidity(&#39;Enter valid mobile number&#39;)"
+                          onchange="try{setCustomValidity(&#39;&#39;)}catch(e){}"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <input
+                          id="ContactUs_From"
+                          name="FromEmailAddress"
+                          class="form-control"
+                          placeholder="Enter your email address"
+                          type="email"
+                          required="required"
+                          maxlength="60"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="ContactUs_Subject"
+                      name="Subject"
+                      maxlength="255"
+                      class="form-control"
+                      placeholder="Subject"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="Comments"
+                      id="ContactUs_Details"
+                      class="form-control"
+                      rows="4"
+                      placeholder="No working hours we work with minutes. We would like to have a minute from you, to hear you, please reach us on phone or mail and we would revert as first thing in our morning, if it is late."
+                      required="required"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn-submit">Send Now</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-sm-6">
+                <div
+                  class="contact-info wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="300ms"
+                  style="
+                    visibility: hidden;
+                    animation-duration: 1000ms;
+                    animation-delay: 300ms;
+                    animation-name: none;
+                  "
+                >
+                  <p>Direct Contact</p>
+                  <ul class="address">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span> Address:</span> D-1102, Salarpuria Melody, Mysore
+                      Road, Bangalore - 560039
+                    </li>
+                    <li>
+                      <i class="fa fa-phone"></i> <span> Phone:</span> +91 934
+                      193 3992, +91 963 244 4388
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope"></i> <span> Enquiry:</span
+                      ><a href="mailto:enquiry@vnurt.com" target="_blank">
+                        enquiry@vnurt.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope"></i> <span> Feedback:</span
+                      ><a href="mailto:feedback@vnurt.com" target="_blank">
+                        feedback@vnurt.com</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fa fa-globe"></i> <span> Website:</span>
+                      <a target="_blank" href="https://www.vnurt.com/">
+                        www.vnurt.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <div class="container">
+
+
+        <button class="btn btn-success" data-toggle="modal" data-target="#mymodal">Contact-Us</button>
+
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog  modal-xl">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h1 class="col-sm-12 text-center">Contact Us<br> We'd love to hear from you</h1>
+                        <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="container">
+
+                                <div class="row">
+                                    <a name="form">
+                                        <div class="col-sm-12">
+                                            <h5>What can we do for you?</h5>
+                                            <p class="text-justify">
+                                                We love chatting to entrepreneurs and hackers about startups and the ups-and-downs of running a business. Our office is located two minutes from Central Station and we're always down for a casual brew.
+                                            </p>
+                                            <p class="text-justify">
+                                                We're always on the lookout for partners with great ideas, no matter how big or small. If you're ready to take the plunge - get in touch and find out if we're a good fit.
+                                            </p>
+                                        </div>
+
+                                    </a>
+
+                                <a name="form">
+                                    <div class="col-sm-6">
+                                        <h5>Details</h5>
+
+                                        <p class="lead">
+                                            <a name="form">
+                                            </a><a href="mailto:enquiry@vnurt.com">enquiry@vnurt.com</a>
+                                            <br>
+                                            <br>
+                                            <a href="tel:+91 934 193 3992, +91 963 244 4388"><i class="icon icon_phone"></i> +91 934 193 3992, +91 963 244 4388</a>
+                                            <br>
+                                            <br> D-1102, Mysore Road Bangalore
+                                            <br> Karnataka , India
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="col-sm-6">
+                                    <h5>Leave a Message</h5>
+                                    <div class="form-wrapper clearfix">
+                                        <form id="contact-us" class="form-contact email-form">
+                                            <div class="inputs-wrapper">
+                                                <input type="hidden" name="_subject" value="Contact Us">
+                                                <input class="form-name validate-required" type="text" placeholder="Your Name" name="name">
+                                                <input class="form-email validate-required validate-email" type="text" placeholder="Your Email Address" name="email">
+                                                <textarea class="form-message validate-required" name="message" placeholder="Your Message"></textarea>
+                                            </div>
+                                            <input type="submit" class="send-form" value="Send Message">
+                                            <div class="form-success">
+                                                <span class="text-white">Message sent - Thanks for your enquiry</span>
+                                            </div>
+                                            <div class="form-error">
+                                                <span class="text-white">Please complete all fields correctly</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        </form>
+
+
+                    </div>
+                    <!-- 
+          <div style="text-align: center;">
+            <button class="btn btn-danger" data-dismiss="modal" style="position: center;"> Signup</button><hr>
+            <a href="a">forgot password?</a><br>
+            <a href="a">don't have an account?</a>
+          </div> -->
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <a class="gotopbtn" href="#"> <i class="fas fa-angle-up" style="color: white;"></i> </a>
+        <!--/#contact-->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <a href="https://vnurt.com/" target="_blank">
+                    <h3>VNURT
+                        <span>TECH.</span>
+                    </h3>
+                </a>
+                <ul class="footer-links" style="list-style-type: none;">
+                    <li>
+                        <a routerlink="../faq/" target="_blank" href="https://www.work4skills.com/faq">Frequently Asked Questions</a>
+                    </li> .
+                    <li>
+                        <a href="https://vnurt.com/views/core/TermsofService.html" target="_blank">Terms &amp; Conditions</a>
+                    </li> ·
+                    <li>
+                        <a href="https://vnurt.com/views/core/RefundPolicy.html" target="_blank">Refund Policy</a>
+                    </li> ·
+                    <li>
+                        <a href="https://vnurt.com/views/core/PrivacyPolicy.html" target="_blank">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="footer-company-name">VNurt Technology © 2020</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <a href="https://www.google.com/maps/place/Salarpuria+Sattva+Melody/@12.9387225,77.5231097,18.35z/data=!4m5!3m4!1s0x3bae3e5e820a66dd:0x84b4dd5b89b44dd8!8m2!3d12.9388682!4d77.5240724" target="_blank">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </a>
+                    <p>
+                        <span>D-1102, Mysore Road Bangalore </span> Karnataka , India</p>
+                </div>
+                <div>
+                    <a href="tel:+91 934 193 3992">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    <p>+91 934 193 3992, +91 963 244 4388</p>
+                </div>
+                <div>
+                    <a href="mailto:enquiry@vnurt.com" target="_blank">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <p>enquiry@vnurt.com</p>
+                </div>
+                <div=>
+                    <a routerlink="../feedback/" target="_blank" href="https://www.work4skills.com/feedback">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </a>
+                    <p>Feedback</p>
+            </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span> VNurt Technology Solutions Pvt. Ltd. is an EdTech Creator Lab working to bridge Skill gap for tech startups. Founded to change the education landscape of INDIA and avail world class skills to candidates
+                    in remotest locations. </p>
+                <div class="footer-icons bounce">
+                    <a href="https://www.facebook.com/vnurt/" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/VNurtTechnology" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/vnurt-technology-solutions-private-limited/" target="_blank">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/_js/jquery.min.js"></script>
+
+        <script src="assets/_js/Home.min.js"></script>
+        <script>
+            //function loadMenu() {
+
+            //    var currLoc = window.location.toString();
+            //}
+
+            $(document).on("scroll", ShowMenu);
+
+            function ShowMenu(event) {
+                var scrollPos = $(document).scrollTop() + 80;
+                if (scrollPos <= $("#account").offset().top)
+                    setHighlightedMenu("homeMenu");
+                else if (
+                    scrollPos >= $("#account").offset().top &&
+                    scrollPos <= $("#services").offset().top
+                )
+                    setHighlightedMenu("accountMenu");
+                else if (
+                    scrollPos >= $("#services").offset().top &&
+                    scrollPos <= $("#twitter").offset().top
+                )
+                    setHighlightedMenu("servicesMenu");
+                //else if (scrollPos >= $('#twitterMenu').offset().top && scrollPos <= $('#customers').offset().top)
+                //    setHighlightedMenu("twitterMenu");
+                else if (
+                    scrollPos >= $("#twitter").offset().top &&
+                    scrollPos <= $("#aboutus").offset().top
+                )
+                    setHighlightedMenu("twitterMenu");
+                else if (
+                    scrollPos >= $("#aboutus").offset().top &&
+                    scrollPos <= $("#contact").offset().top
+                )
+                    setHighlightedMenu("aboutusMenu");
+                else if (scrollPos >= $("#contact").offset().top)
+                    setHighlightedMenu("contactMenu");
+            }
+
+            function setHighlightedMenu(currMenu) {
+                console.log(currMenu);
+                var menuList =
+                    "homeMenu,servicesMenu,twitterMenu,newsMenu,aboutusMenu,contactMenu,accountMenu";
+                var menuArray = menuList.split(",");
+                for (i = 0; i < menuArray.length; i++) {
+                    {
+                        if (
+                            document.getElementById(menuArray[i]) !== null &&
+                            menuArray[i].classList !== null
+                        ) {
+                            if (menuArray[i] == currMenu)
+                                document.getElementById(menuArray[i]).classList.add("active");
+                            else
+                                document
+                                .getElementById(menuArray[i])
+                                .classList.remove("active");
+                        }
+                    }
+                }
+            }
+
+            var basePath = location.origin;
+            $(function() {
+                if (
+                    navigator.userAgent.indexOf("MSIE ") > -1 ||
+                    navigator.userAgent.indexOf("Trident/") > -1 ||
+                    navigator.userAgent.indexOf("Edge/") > -1
+                )
+                    alert("We recommend Chrome for best experience.");
+
+                UpdateAccountSection();
+                $("#menuContent").load(basePath + "/views/core/Menu.html");
+                //$("#eventsContent").load(basePath + "/views/core/Events.html");
+                $("#collegebrandingModal").load(
+                    basePath + "/views/services/collegebranding.html"
+                );
+                $("#softwareservicesModal").load(
+                    basePath + "/views/services/softwareservicesModal.html"
+                );
+                $("#experttalksModal").load(
+                    basePath + "/views/services/experttalks.html"
+                );
+                $("#labshareModal").load(basePath + "/views/services/labshare.html");
+                $("#nationalconferencesModal").load(
+                    basePath + "/views/services/nationalconferences.html"
+                );
+                $("#projectguidenceModal").load(
+                    basePath + "/views/services/projectguidence.html"
+                );
+                $("#workshopsModal").load(basePath + "/views/services/workshops.html");
+                $("#studentsModal").load(basePath + "/views/services/students.html");
+                $("#professionalsModal").load(
+                    basePath + "/views/services/professionals.html"
+                );
+                $("#institutesModal").load(
+                    basePath + "/views/services/institutes.html"
+                );
+                $("#corporatesModal").load(
+                    basePath + "/views/services/corporates.html"
+                );
+                $("#usertypeHelpModal").load(
+                    basePath + "/views/services/usertypeHelp.html"
+                );
+            });
+        </script>
+
+        <script type="text/javascript" src="assets/_js/bootstrap.min.js"></script>
+        <!-- VNurt.COM -->
+        <script type="text/javascript" src="assets/_js/js(1)"></script>
+        <!-- DEV SITE -
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?ApiKey=AIzaSyC16342RiY64ZzNjNQW___sh5jnFp8Jqxw"></script>-->
+        <script type="text/javascript" src="assets/_js/wow.min.js"></script>
+        <script type="text/javascript" src="assets/_js/mousescroll.min.js"></script>
+
+        <script type="text/javascript" src="assets/_js/smoothscroll.min.js"></script>
+        <script type="text/javascript" src="assets/_js/jquery.countTo.min.js"></script>
+
+        <script type="text/javascript" src="assets/_js/lightbox.min.js"></script>
+
+        <script type="text/javascript" src="assets/_js/main.min.js"></script>
+        <script type="text/javascript" src="assets/_js/isotope.min.js"></script>
+        <script type="text/javascript" src="assets/_js/script.js"></script>
+
+
+        <div id="lightboxOverlay" class="lightboxOverlay" style="display: none"></div>
+        <div id="lightbox" class="lightbox" style="display: none">
+            <div class="lb-outerContainer">
+                <div class="lb-container">
+                    <img class="lb-image" src="https://www.vnurt.com/" />
+                    <div class="lb-nav">
+                        <a class="lb-prev" href="https://www.vnurt.com/"></a>
+                        <a class="lb-next" href="https://www.vnurt.com/"></a>
+                    </div>
+                    <div class="lb-loader">
+                        <a class="lb-cancel"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lb-dataContainer">
+                <div class="lb-data">
+                    <div class="lb-details">
+                        <span class="lb-caption"></span><span class="lb-number"></span>
+                    </div>
+                    <div class="lb-closeContainer">
+                        <a class="lb-close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="OwONK0v-1600922950994" class="" style="display: block !important">
+
+
+
+
+
+</body>
+
+</html>
